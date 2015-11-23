@@ -29,24 +29,6 @@ class ViewController: UIViewController,PFLogInViewControllerDelegate, PFSignUpVi
             self.signUpViewController.delegate = self
         }
     }
-    
-
-/*
-    //MARK : Parse Sign Up view
-    
-    func signUpViewController(signUpController: PFSignUpViewController!, didSignUpUser user: PFUser!){
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func signUpViewController(signUpController: PFSignUpViewController!, didFailToSignUpWithError error: NSError!){
-        print("Failed to Sign Up.")
-    }
-    
-    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController!){
-        print("User Dismissed Sign Up.")
-    }
-
-*/
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
