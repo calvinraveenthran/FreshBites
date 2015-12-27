@@ -297,9 +297,6 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="-8" width="240" height="161"/>
-                                                    </variation>
                                                 </imageView>
                                                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-Hg-1RA">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -328,20 +325,19 @@
                                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                             <animations/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="ZYd-8v-DXW"/>
+                                                                <constraint firstAttribute="height" constant="21" id="BmG-lG-WoY"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
-                                                                    <exclude reference="ZYd-8v-DXW"/>
+                                                                    <exclude reference="BmG-lG-WoY"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="17" y="42" width="91" height="21"/>
+                                                            <variation key="heightClass=regular-widthClass=compact">
                                                                 <mask key="constraints">
-                                                                    <include reference="ZYd-8v-DXW"/>
+                                                                    <include reference="BmG-lG-WoY"/>
                                                                 </mask>
                                                             </variation>
                                                         </label>
@@ -359,8 +355,7 @@
                                                                     <exclude reference="4i6-13-moT"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="160" y="0.0" width="72" height="74"/>
+                                                            <variation key="heightClass=regular-widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="4i6-13-moT"/>
                                                                 </mask>
@@ -370,12 +365,11 @@
                                                     <animations/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="d5a-td-bM0" firstAttribute="leading" secondItem="W2Q-hL-teN" secondAttribute="trailing" constant="52" id="7eW-ML-dfW"/>
+                                                        <constraint firstItem="W2Q-hL-teN" firstAttribute="leading" secondItem="X5c-e4-1KH" secondAttribute="leading" id="16O-2L-QnC"/>
+                                                        <constraint firstItem="W2Q-hL-teN" firstAttribute="top" secondItem="X5c-e4-1KH" secondAttribute="bottom" constant="8" symbolic="YES" id="2i3-Uz-hII"/>
                                                         <constraint firstItem="d5a-td-bM0" firstAttribute="top" secondItem="hxe-Hg-1RA" secondAttribute="top" id="LfY-Nd-Yg3"/>
                                                         <constraint firstItem="X5c-e4-1KH" firstAttribute="leading" secondItem="hxe-Hg-1RA" secondAttribute="leading" constant="17" id="SSs-Fq-4ug"/>
-                                                        <constraint firstItem="W2Q-hL-teN" firstAttribute="top" secondItem="X5c-e4-1KH" secondAttribute="bottom" constant="8" symbolic="YES" id="UKr-uK-IZd"/>
                                                         <constraint firstAttribute="bottom" secondItem="d5a-td-bM0" secondAttribute="bottom" id="hd5-q3-eYy"/>
-                                                        <constraint firstItem="W2Q-hL-teN" firstAttribute="leading" secondItem="X5c-e4-1KH" secondAttribute="leading" id="tgs-5b-wb0"/>
                                                         <constraint firstItem="d5a-td-bM0" firstAttribute="trailing" secondItem="hxe-Hg-1RA" secondAttribute="trailingMargin" id="v5n-Ta-LS8"/>
                                                         <constraint firstItem="X5c-e4-1KH" firstAttribute="top" secondItem="hxe-Hg-1RA" secondAttribute="topMargin" id="wyl-Yi-g0X"/>
                                                     </constraints>
@@ -386,29 +380,26 @@
                                                             <exclude reference="d5a-td-bM0"/>
                                                         </mask>
                                                         <mask key="constraints">
-                                                            <exclude reference="UKr-uK-IZd"/>
-                                                            <exclude reference="tgs-5b-wb0"/>
                                                             <exclude reference="SSs-Fq-4ug"/>
                                                             <exclude reference="wyl-Yi-g0X"/>
-                                                            <exclude reference="7eW-ML-dfW"/>
+                                                            <exclude reference="16O-2L-QnC"/>
+                                                            <exclude reference="2i3-Uz-hII"/>
                                                             <exclude reference="LfY-Nd-Yg3"/>
                                                             <exclude reference="hd5-q3-eYy"/>
                                                             <exclude reference="v5n-Ta-LS8"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="79" width="240" height="74"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="subviews">
                                                             <include reference="X5c-e4-1KH"/>
                                                             <include reference="W2Q-hL-teN"/>
                                                             <include reference="d5a-td-bM0"/>
                                                         </mask>
                                                         <mask key="constraints">
-                                                            <include reference="UKr-uK-IZd"/>
-                                                            <include reference="tgs-5b-wb0"/>
                                                             <include reference="SSs-Fq-4ug"/>
                                                             <include reference="wyl-Yi-g0X"/>
-                                                            <include reference="7eW-ML-dfW"/>
+                                                            <include reference="16O-2L-QnC"/>
+                                                            <include reference="2i3-Uz-hII"/>
                                                             <include reference="LfY-Nd-Yg3"/>
                                                             <include reference="hd5-q3-eYy"/>
                                                             <include reference="v5n-Ta-LS8"/>
