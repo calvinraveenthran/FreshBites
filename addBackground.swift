@@ -30,7 +30,6 @@ extension UIView {
         // screen width and height:
         //let width = UIScreen.mainScreen().bounds.size.width
         //let height = UIScreen.mainScreen().bounds.size.height
-        
         let imageView = UIImageView(frame: CGRectMake(200, 300, 200, 300))
         imageView.image = UIImage(named: "freshBitesLogo.png")
         

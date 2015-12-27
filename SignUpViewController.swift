@@ -81,6 +81,7 @@ class SignUpViewController: UIViewController, UIAlertViewDelegate {
                     var alert = UIAlertView(title: "Success", message:
                         "User was created", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
+                    self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 
             })
@@ -88,5 +89,6 @@ class SignUpViewController: UIViewController, UIAlertViewDelegate {
 
     }
     @IBAction func cancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

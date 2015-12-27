@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import ParseUI
 
-class ViewController: UIViewController,PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UIAlertViewDelegate  {
+class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UIAlertViewDelegate  {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -62,6 +62,9 @@ class ViewController: UIViewController,PFLogInViewControllerDelegate, PFSignUpVi
             })
             
         }
+    }
+    @IBAction func SignUp(sender: AnyObject) {
+        self.performSegueWithIdentifier("signUpSegue", sender: nil)
     }
 
 }
