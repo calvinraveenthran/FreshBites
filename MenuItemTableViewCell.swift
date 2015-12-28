@@ -8,12 +8,16 @@
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
+class MenuItemTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var itemNameLabel: UILabel?
-    @IBOutlet weak var itemImageView: UIImageView?
-    @IBOutlet weak var selectedMenuImageView: UIImageView?
     
+    @IBOutlet weak var menuItemNameLabel: UILabel!
+    
+    @IBOutlet weak var ingredientsItemLabel: UILabel!
+    
+    @IBOutlet weak var priceItemLabel: UILabel!
+    
+    @IBOutlet weak var menuItemImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
