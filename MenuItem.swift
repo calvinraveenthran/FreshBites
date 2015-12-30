@@ -7,20 +7,22 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class MenuItem: NSObject {
     
-    var name: String
-    var ingredients: String
-    var image: String
-    var price: String
-    var discount: String?
+    var name: String!
+    var ingredients: String!
+    var pffImage: PFFile!
+    var price: String!
     
-    init(name: String, ingredients: String, image: String, price: String, discount: String?) {
+    init(name: String, ingredients: String, pffImage: PFFile, price: String) {
         self.name = name
         self.ingredients = ingredients
-        self.image = image
+        self.pffImage = pffImage
         self.price = price
-        self.discount = discount
     }
+    
+    
 }

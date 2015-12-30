@@ -7,37 +7,62 @@
 //
 
 import UIKit
+import CoreData
+import Parse
+import ParseUI
 
 class MenuItemsManager: NSObject {
     
     static let sharedManager = MenuItemsManager()
+    var resultItems = [MenuItem]()
     
     private override init() {}
-    
-    // MARK: - Public Methods
-    func loadData() -> [MenuItem] {
-        let path = NSBundle.mainBundle().pathForResource("MenuItems", ofType: "plist")
-        if let dataArray = NSArray(contentsOfFile: path!) {
-            return constructMenuItemsFromArray(dataArray)
-        } else {
-            return [MenuItem]()
-        }
-    }
-    
-    // MARK: - Private Methods
-    private func constructMenuItemsFromArray(array: NSArray) -> [MenuItem] {
-        var resultItems = [MenuItem]()
+ /*
+    func retrieveMenu(){
+            //create a new PFQuery
+            let group = dispatch_group_create()
+            dispatch_group_enter(group)
         
-        for object in array {
-            let name = object["name"] as! String
-            let ingredients = object["ingredients"] as! String
-            let image = object["image"] as! String
-            let price = object["price"] as! String
-            let discount = object["discount"] as? String
-            
-            let loadedMenuItem = MenuItem(name: name, ingredients: ingredients, image: image, price: price, discount: discount)
-            resultItems.append(loadedMenuItem)
+            var query:PFQuery = PFQuery(className: "MenuItem")
+            query.whereKey("catererID", equalTo:"1")
+            //call find objects in background
+            query.findObjectsInBackgroundWithBlock{ (objects: [PFObject]?, error: NSError?) -> Void in
+                
+                if error == nil{
+                    //loop through the objects array
+                    for foodItem in objects!{
+                        //Retrieve the values from the PFObject
+                        let foodItemName:String? = (foodItem as PFObject)["name"] as? String
+                        let foodItemIngredients:String? = (foodItem as PFObject)["ingredients"] as? String
+                        let foodItemPrice:String? = (foodItem as PFObject)["price"] as? String
+                        let PFFImage:PFFile? = (foodItem as PFObject)["image"] as! PFFile
+                    
+                    
+                        PFFImage?.getDataInBackgroundWithBlock({ (imageData, error) -> Void in
+                            if error == nil{
+                                let foodItemImage = UIImage(data: imageData!)
+                                //assign it to our menuItem
+                                if(foodItemName != nil){
+                                    let loadedMenuItem = MenuItem(name: foodItemName!, ingredients: foodItemIngredients!, image: foodItemImage!, price: foodItemPrice!)
+                                    self.resultItems.append(loadedMenuItem)
+                                }
+                            }else {
+                                // Log details of the failure
+                                print("Error: \(error!) \(error!.userInfo)")
+                            }
+                        })
+                    }
+                dispatch_group_leave(group)
+                }else {
+                    // Log details of the failure
+                    print("Error: \(error!) \(error!.userInfo)")
+                dispatch_group_leave(group)
+                }
         }
-        return resultItems
-    }
+        dispatch_group_notify(group, dispatch_get_main_queue()) {
+            //println(self.itemArray?.count)
+            //self.reloadData()
+        }
+    }*/
+
 }
