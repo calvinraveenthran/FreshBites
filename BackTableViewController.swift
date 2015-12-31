@@ -13,6 +13,8 @@ class BackTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         backTableArray = ["Menu", "Reviews"]
+        
+        self.tableView.backgroundColor = UIColor.midnightBlueColor()
     }
     
     
@@ -24,6 +26,8 @@ class BackTableViewController: UITableViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier(backTableArray[indexPath.row], forIndexPath: indexPath) as UITableViewCell
         
         cell.textLabel?.text = backTableArray[indexPath.row]
+        cell.backgroundColor = UIColor.midnightBlueColor()
+        
         
         return cell
     }

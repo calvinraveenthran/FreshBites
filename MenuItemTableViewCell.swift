@@ -19,6 +19,7 @@ class MenuItemTableViewCell: UITableViewCell {
     
 
     @IBOutlet weak var menuItemImageView: UIImageView!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
     }

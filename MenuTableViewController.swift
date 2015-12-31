@@ -15,10 +15,13 @@ class MenuTableViewController:  UITableViewController {
     @IBOutlet weak var menu: UIBarButtonItem!
     
     private var menuItems: [MenuItem] = []
-    private var menuImages: [UIImage] = []
+    private var menuImages = [PFFile: UIImage]()
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.backgroundColor = UIColor.midnightBlueColor()
+
         
         // Setting Up Side Navigation
         menu.target = self.revealViewController()
@@ -46,7 +49,7 @@ class MenuTableViewController:  UITableViewController {
         
         //Update Image Values
         if !self.menuImages.isEmpty{
-            let image = menuImages[indexPath.row]
+            let image = menuImages[item.pffImage]
             cell.menuItemImageView?.image =  image
         }
         
@@ -67,7 +70,7 @@ class MenuTableViewController:  UITableViewController {
         
         //create a new PFQuery
         let query:PFQuery = PFQuery(className: "MenuItem")
-        query.whereKey("catererID", equalTo:"1")
+        //query.whereKey("catererID", equalTo:"1")
         
         // Get Menu Items from PARSE in the background (Thread Branch)
         queue.addOperationWithBlock() {
@@ -85,7 +88,7 @@ class MenuTableViewController:  UITableViewController {
                         let loadedMenuItem = MenuItem(name: foodItemName!, ingredients: foodItemIngredients!, pffImage: PFFImage!, price: foodItemPrice!)
                         self.menuItems.append(loadedMenuItem)
                     }
-                    //When Doenloading is Finished (Thread Join)
+                    //When Downloading is Finished (Thread Join)
                     NSOperationQueue.mainQueue().addOperationWithBlock() {
                         //Load Images in the BackGround
                         queue2.addOperationWithBlock() {
@@ -93,7 +96,7 @@ class MenuTableViewController:  UITableViewController {
                                 foodItem.pffImage?.getDataInBackgroundWithBlock({ (imageData, error) -> Void in
                                     if error == nil{
                                         let foodItemImage = UIImage(data: imageData!)
-                                        self.menuImages.append(foodItemImage!)
+                                        self.menuImages[foodItem.pffImage] = foodItemImage!
                                     }else {
                                         print("Error: \(error!) \(error!.userInfo)")
                                     }
@@ -112,8 +115,6 @@ class MenuTableViewController:  UITableViewController {
                 }
             }
         }
-
-
     }
     
 }

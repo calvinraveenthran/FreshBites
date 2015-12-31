@@ -13,7 +13,10 @@ import UIKit
 
 class CatererItemTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var menuItemImageView: UIImageView!
+
+    
+    @IBOutlet weak var catererNameLabel: UILabel!
+    @IBOutlet weak var catererImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

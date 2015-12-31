@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class CatererItem: NSObject {
     
@@ -14,13 +16,14 @@ class CatererItem: NSObject {
     var address: String!
     var contact: String!
     var catererID: String!
-    var menuItem: [MenuItem]!
+    var pffImage: PFFile!
     
     
-    init(name: String, address: String, contact: String, catererID: String) {
+    init(name: String, address: String, contact: String, catererID: String, pffImage: PFFile) {
         self.name = name
         self.address = address
         self.contact = contact
         self.catererID = catererID
+        self.pffImage = pffImage
     }
 }
