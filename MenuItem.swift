@@ -26,3 +26,14 @@ class MenuItem: NSObject {
     
     
 }
+
+class MenuItemPicture: NSObject {
+    
+    var pffImage: PFFile!
+    var objectID: String!
+    
+    init(pffImage: PFFile, objectID: String) {
+        self.pffImage = pffImage
+        self.objectID = objectID
+    }
+}
