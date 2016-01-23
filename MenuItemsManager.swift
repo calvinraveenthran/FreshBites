@@ -11,10 +11,10 @@ import CoreData
 import Parse
 import ParseUI
 
-class MenuItemsManager: NSObject {
+class UserSessionManager: NSObject {
     
-    static let sharedManager = MenuItemsManager()
-    var resultItems = [MenuItem]()
+    static let userSharedManager = UserSessionManager()
+    var checkoutArray = [OrderItem]()
     
     private override init() {}
 

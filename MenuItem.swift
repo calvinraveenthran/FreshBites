@@ -16,12 +16,18 @@ class MenuItem: NSObject {
     var ingredients: String!
     var pffImage: PFFile!
     var price: String!
+    var objectID: String!
+    var menuItemDescription: String!
+    var priceInt: Int!
     
-    init(name: String, ingredients: String, pffImage: PFFile, price: String) {
+    init(name: String, ingredients: String, pffImage: PFFile, price: String, objectID: String, menuItemDescription: String, priceInt: Int) {
         self.name = name
         self.ingredients = ingredients
         self.pffImage = pffImage
         self.price = price
+        self.objectID = objectID
+        self.menuItemDescription = menuItemDescription
+        self.priceInt = priceInt
     }
     
     
@@ -36,4 +42,21 @@ class MenuItemPicture: NSObject {
         self.pffImage = pffImage
         self.objectID = objectID
     }
+}
+
+class OrderItem: NSObject{
+
+    var objectID: String!
+    var quantity: Int!
+    var comments: String!
+    var price: Int!
+    
+    init(objectID: String, quantity: Int, comments: String, price: Int) {
+
+        self.objectID = objectID
+        self.quantity = quantity
+        self.comments = comments
+        self.price = price
+    }
+
 }

@@ -11,24 +11,30 @@ import CoreData
 import Parse
 import ParseUI
 
-class MenuTableViewController:  UITableViewController {
+class MenuTableViewController:  UITableViewController, OrderItemTabBarControllerDelegate {
+    
+    //  Class Variables
     @IBOutlet weak var menu: UIBarButtonItem!
     
+    // menuImages is a mapping of the image with the picture id
+    // menuItems is an object of a Menu.
     private var menuItems: [MenuItem] = []
-    private var menuImages = [PFFile: UIImage]()
+    private var menuImages = [PFFile: UIImage]()    
+    var checkoutArray: [OrderItem] = UserSessionManager.userSharedManager.checkoutArray
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //1.    Set Background Color
         self.tableView.backgroundColor = UIColor.midnightBlueColor()
 
         
-        // Setting Up Side Navigation
+        //2.    Setting Up Side Navigation
         menu.target = self.revealViewController()
         menu.action = Selector("revealToggle:")
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 
-        //Retrieve Menu
+        //3.    Retrieve Menu
         self.retrieveMenu()
     }
     
@@ -42,12 +48,12 @@ class MenuTableViewController:  UITableViewController {
         let cell: MenuItemTableViewCell = tableView.dequeueReusableCellWithIdentifier("MenuItemTableViewCell") as! MenuItemTableViewCell
         let item = menuItems[indexPath.row]
 
-        //Update all the Non Image Dependent Values
+        //1.    Update all the Non Image Dependent Values
         cell.menuItemNameLabel?.text = item.name
         cell.ingredientsItemLabel?.text = item.ingredients
         cell.priceItemLabel?.text = item.price
         
-        //Update Image Values
+        //3.    Update Image Values
         if !self.menuImages.isEmpty{
             let image = menuImages[item.pffImage]
             cell.menuItemImageView?.image =  image
@@ -57,6 +63,34 @@ class MenuTableViewController:  UITableViewController {
         return cell
     }
     
+  /*  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let targetMenu = menuItems[indexPath.row]
+
+        performSegueWithIdentifier("showTargetMenu", sender: targetMenu)
+    }*/
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showTargetMenu" {
+            
+            let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+            let targetMenu = self.menuItems[indexPath.row]
+            
+            
+            let tabBarController = segue.destinationViewController as! OrderItemTabBarController
+                tabBarController.myDelegate = self
+            
+            let desView: FoodScrollViewController2 = tabBarController.viewControllers?.first as! FoodScrollViewController2
+                desView.targetMenu = targetMenu
+                desView.delegate = tabBarController
+        }
+    }
+    
+    func appendToCheckoutMaster(childCheckoutObject:OrderItem) {
+        UserSessionManager.userSharedManager.checkoutArray.append(childCheckoutObject)
+        checkoutArray = UserSessionManager.userSharedManager.checkoutArray
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,35 +98,40 @@ class MenuTableViewController:  UITableViewController {
     
     func retrieveMenu(){
         
-        //create NSQueue
+        //1.    create NSQueue
         let queue = NSOperationQueue()
         let queue2 = NSOperationQueue()
         
-        //create a new PFQuery
+        //2.    create a new PFQuery
         let query:PFQuery = PFQuery(className: "MenuItem")
-        //query.whereKey("catererID", equalTo:"1")
         
-        // Get Menu Items from PARSE in the background (Thread Branch)
+        //3.    Get Menu Items from PARSE in the background (Fork queue)
         queue.addOperationWithBlock() {
+            
             query.findObjectsInBackgroundWithBlock{ (objects: [PFObject]?, error: NSError?) -> Void in
                 if error == nil{
-                    //loop through the objects array
+                    //  loop through the objects array
+                    //  Retrieve the values from the PFObject
                     for foodItem in objects!{
-                        //Retrieve the values from the PFObject
+
                         let foodItemName:String? = (foodItem as PFObject)["name"] as? String
                         let foodItemIngredients:String? = (foodItem as PFObject)["ingredients"] as? String
                         let foodItemPrice:String? = (foodItem as PFObject)["price"] as? String
                         let PFFImage:PFFile? = (foodItem as PFObject)["image"] as? PFFile
+                        let foodItemObjectId:String? = foodItem.objectId
+                        let foodItemDescription:String? = (foodItem as PFObject)["itemDescription"] as? String
+                        let foodItemPriceInt:Int? = (foodItem as PFObject)["priceInt"] as? Int
                         
                         //Append to Menu List
-                        let loadedMenuItem = MenuItem(name: foodItemName!, ingredients: foodItemIngredients!, pffImage: PFFImage!, price: foodItemPrice!)
+                        let loadedMenuItem = MenuItem(name: foodItemName!, ingredients: foodItemIngredients!, pffImage: PFFImage!, price: foodItemPrice!, objectID: foodItemObjectId!, menuItemDescription: foodItemDescription!, priceInt: foodItemPriceInt!)
                         self.menuItems.append(loadedMenuItem)
                     }
-                    //When Downloading is Finished (Thread Join)
+                    
+                    //4.    When Downloading is Finished (Join queue)
                     NSOperationQueue.mainQueue().addOperationWithBlock() {
-                        //Load Images in the BackGround
-                        queue2.addOperationWithBlock() {
-                            for foodItem in self.menuItems{
+                        //5.    Now go and get the actual image with PFFIMage Key.(Fork queue 2)
+                        for foodItem in self.menuItems{
+                            queue2.addOperationWithBlock() {
                                 foodItem.pffImage?.getDataInBackgroundWithBlock({ (imageData, error) -> Void in
                                     if error == nil{
                                         let foodItemImage = UIImage(data: imageData!)
@@ -101,10 +140,12 @@ class MenuTableViewController:  UITableViewController {
                                         print("Error: \(error!) \(error!.userInfo)")
                                     }
                                 })
-                            }
-                            NSOperationQueue.mainQueue().addOperationWithBlock() {
-                                // when done, update your UI and/or model on the main queue IMAGE
-                                self.tableView.reloadData()
+                            
+                                NSOperationQueue.mainQueue().addOperationWithBlock() {
+                                    if self.menuImages.count == self.menuItems.count {
+                                        self.tableView.reloadData()
+                                    }
+                                }
                             }
                         }
                         // when done, update your UI and/or model on the main queue NON-IMAGE
