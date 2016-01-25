@@ -45,14 +45,15 @@ class MenuItemPicture: NSObject {
 }
 
 class OrderItem: NSObject{
-
+    var name: String!
     var objectID: String!
     var quantity: Int!
     var comments: String!
     var price: Int!
     
-    init(objectID: String, quantity: Int, comments: String, price: Int) {
+    init(name: String, objectID: String, quantity: Int, comments: String, price: Int) {
 
+        self.name = name
         self.objectID = objectID
         self.quantity = quantity
         self.comments = comments

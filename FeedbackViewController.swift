@@ -4,6 +4,8 @@
 //
 //  Created by Calvin Raveenthran on 2016-01-23.
 //  Copyright © 2016 Calvin Raveenthran. All rights reserved.
+//  This is the view controller for the reviews page
+//
 //
 
 import Foundation
@@ -42,7 +44,8 @@ class FeedbackViewController: UIViewController{
     @IBOutlet weak var addFeedbackBtn: UIButton!
     
     private var feedbacks: [Feedback] = []
-    private var currentFeedbackRating: Int = 0
+    private var currentFeedbackRating: Int = 1
+    var targetMenu: MenuItem!
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,6 +55,7 @@ class FeedbackViewController: UIViewController{
         super.viewDidLoad()
         
         feedbackTableView.dataSource = self
+        self.retrieveFeedback()
 
     }
     
@@ -79,21 +83,38 @@ class FeedbackViewController: UIViewController{
     
     @IBAction func sendFeedback(sender: AnyObject) {
         let newFeedback = Feedback()
+        var reviewSend = PFObject(className:"Feedback")
         
         if let name = nameField?.text {
             newFeedback.name = name
+            reviewSend["name"] = name
         }
         
         if let text = feedbackField?.text {
             newFeedback.text = text
+            reviewSend["opinion"] = text
         }
         
         newFeedback.numberOfStars = currentFeedbackRating
+        reviewSend["numberOfStars"] = currentFeedbackRating
+        
+        reviewSend["menuItemObjectID"] = targetMenu.objectID
         
         
         //GET IN
+        //Add to current array
         feedbacks.append(newFeedback)
         self.feedbackTableView.reloadData()
+        
+        //Also push to the backend
+        reviewSend.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
         
         nameField?.text = ""
         feedbackField?.text = ""
@@ -125,6 +146,43 @@ class FeedbackViewController: UIViewController{
     
     
     
+    func retrieveFeedback(){
+        
+        //1.    create NSQueue
+        let queue = NSOperationQueue()
+        
+        //2.    create a new PFQuery
+        let query:PFQuery = PFQuery(className: "Feedback")
+        query.whereKey("menuItemObjectID", equalTo:targetMenu.objectID)
+        
+        //3.    Get Menu Items from PARSE in the background (Fork queue)
+        queue.addOperationWithBlock() {
+            
+            query.findObjectsInBackgroundWithBlock{ (objects: [PFObject]?, error: NSError?) -> Void in
+                if error == nil{
+                    //  loop through the objects array
+                    //  Retrieve the values from the PFObject
+                    for review in objects!{
+                        
+                        let reviewName:String? = (review as PFObject)["name"] as? String
+                        let reviewOpinion:String? = (review as PFObject)["opinion"] as? String
+                        let reviewRating:Int? = (review as PFObject)["numberOfStars"] as? Int
+                        
+                        //Append to Feedback array
+                        let loadedReviewItem = Feedback(name: reviewName!, text: reviewOpinion!, numberOfStars: reviewRating!)
+                        self.feedbacks.append(loadedReviewItem)
+                    }
+                    
+                    //4.    When Downloading is Finished (Join queue)
+                    NSOperationQueue.mainQueue().addOperationWithBlock() {
+                            self.feedbackTableView.reloadData()
+                    }
+                }else {
+                    print("Error: \(error!) \(error!.userInfo)")
+                }
+            }
+        }
+    }
 }
 
 
@@ -148,19 +206,3 @@ extension FeedbackViewController: UITableViewDataSource {
         return cell
     }
 }
-
-// MARK: - UITableViewDelegate
-/*extension FeedbackViewController: UITableViewDelegate {
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let cell: FeedbackTableViewCell = tableView.dequeueReusableCellWithIdentifier("feedBackCell") as! FeedbackTableViewCell
-        
-        let feedback = feedbacks[indexPath.row]
-        
-        cell.feedbackNameLabel?.text = feedback.name
-        cell.feedbackTextLabel?.text = feedback.text
-        
-        let height = cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height
-        return height
-    }
-}*/

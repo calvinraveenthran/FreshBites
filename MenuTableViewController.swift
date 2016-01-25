@@ -83,6 +83,8 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
             let desView: FoodScrollViewController2 = tabBarController.viewControllers?.first as! FoodScrollViewController2
                 desView.targetMenu = targetMenu
                 desView.delegate = tabBarController
+            let desView2: FeedbackViewController = tabBarController.viewControllers?.last as! FeedbackViewController
+                desView2.targetMenu = targetMenu
         }
     }
     

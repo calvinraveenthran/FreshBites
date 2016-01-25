@@ -40,14 +40,14 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate{
     
         @IBAction func AddToCart(sender: AnyObject) {
             if itemCount>0{
+                let name:String = self.targetMenu.name
                 let objectID:String = self.targetMenu.objectID
                 let quantity:Int = self.itemCount
-                let price:Int = self.itemCount*self.targetMenu.priceInt
+                let price:Int = self.targetMenu.priceInt
                 let comments:String = (self.commentsTextField.text)!
             
-                let loadedOrder = OrderItem(objectID: objectID, quantity: quantity, comments:comments, price:price)
+                let loadedOrder = OrderItem(name: name, objectID: objectID, quantity: quantity, comments:comments, price:price)
             
-                //self.checkoutArray.append(loadedOrder)
                 let alert = UIAlertController(title: "Success", message: "Item Added", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
