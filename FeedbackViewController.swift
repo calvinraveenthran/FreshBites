@@ -44,7 +44,7 @@ class FeedbackViewController: UIViewController{
     @IBOutlet weak var addFeedbackBtn: UIButton!
     
     private var feedbacks: [Feedback] = []
-    private var currentFeedbackRating: Int = 1
+    private var currentFeedbackRating: Int = 0
     var targetMenu: MenuItem!
     
     override func didReceiveMemoryWarning() {

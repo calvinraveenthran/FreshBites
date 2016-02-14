@@ -55,6 +55,12 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
                 if ((user != nil)){
                     let alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        let viewController:SWRevealViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("revealViewController") as! SWRevealViewController
+                        
+                        self.presentViewController(viewController, animated: true, completion: nil)
+                    })
                 }else{
                     let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                     alert.show()

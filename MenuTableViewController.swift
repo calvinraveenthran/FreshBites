@@ -16,6 +16,8 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
     //  Class Variables
     @IBOutlet weak var menu: UIBarButtonItem!
     
+    @IBOutlet weak var usernameButton: UIBarButtonItem!
+
     // menuImages is a mapping of the image with the picture id
     // menuItems is an object of a Menu.
     private var menuItems: [MenuItem] = []
@@ -27,7 +29,6 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
         
         //1.    Set Background Color
         self.tableView.backgroundColor = UIColor.midnightBlueColor()
-
         
         //2.    Setting Up Side Navigation
         menu.target = self.revealViewController()
@@ -36,6 +37,14 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
 
         //3.    Retrieve Menu
         self.retrieveMenu()
+        
+        //4.    UsernameButton title;
+        usernameButton.title = PFUser.currentUser()!.username
+
+        
+
+        
+        
     }
     
 
@@ -50,7 +59,7 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
 
         //1.    Update all the Non Image Dependent Values
         cell.menuItemNameLabel?.text = item.name
-        cell.ingredientsItemLabel?.text = item.ingredients
+        cell.ingredientsItemLabel?.text = item.menuItemDescription
         cell.priceItemLabel?.text = item.price
         
         //3.    Update Image Values
@@ -117,15 +126,14 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
                     for foodItem in objects!{
 
                         let foodItemName:String? = (foodItem as PFObject)["name"] as? String
-                        let foodItemIngredients:String? = (foodItem as PFObject)["ingredients"] as? String
+                        let foodItemDescription:String? = (foodItem as PFObject)["description"] as? String
                         let foodItemPrice:String? = (foodItem as PFObject)["price"] as? String
                         let PFFImage:PFFile? = (foodItem as PFObject)["image"] as? PFFile
                         let foodItemObjectId:String? = foodItem.objectId
-                        let foodItemDescription:String? = (foodItem as PFObject)["itemDescription"] as? String
                         let foodItemPriceInt:Int? = (foodItem as PFObject)["priceInt"] as? Int
                         
                         //Append to Menu List
-                        let loadedMenuItem = MenuItem(name: foodItemName!, ingredients: foodItemIngredients!, pffImage: PFFImage!, price: foodItemPrice!, objectID: foodItemObjectId!, menuItemDescription: foodItemDescription!, priceInt: foodItemPriceInt!)
+                        let loadedMenuItem = MenuItem(name:foodItemName!, menuItemDescription:foodItemDescription!,pffImage:PFFImage!,price:foodItemPrice!, objectID:foodItemObjectId!, priceInt:foodItemPriceInt!)
                         self.menuItems.append(loadedMenuItem)
                     }
                     

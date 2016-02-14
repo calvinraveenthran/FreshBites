@@ -21,8 +21,8 @@ protocol FoodScrollViewController2Delegate{
 
 class FoodScrollViewController2: UIViewController, UIScrollViewDelegate{
         //Class Outlets
+        @IBOutlet weak var itemsTable: UITableView!
         @IBOutlet weak var commentsTextField: UITextField!
-        @IBOutlet weak var itemDescriptionDescriptionTextView: UITextView!
         @IBOutlet weak var scrollView: UIScrollView!
         @IBOutlet weak var countLabel: UILabel!
     
@@ -31,6 +31,7 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate{
     
         private var pageImages = [String:UIImage]()
         private var pages: [MenuItemPicture] = []
+        private var itemList: [String]=[]
     
         //Variable of Controller Delegate (The Menu Item Selected in previous Table)
         var targetMenu: MenuItem!    
@@ -80,13 +81,15 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate{
 override func viewDidLoad() {
         super.viewDidLoad()
     
+        self.itemsTable.dataSource = self
         //1. Set BcckGround Color
         //self.view.backgroundColor = UIColor.midnightBlueColor()
     
         //2. Call method to load the View
         self.LoadImageViews()
+        self.LoadItemTableArray()
     
-        self.itemDescriptionDescriptionTextView.text = targetMenu.menuItemDescription
+        //self.itemDescriptionDescriptionTextView.text = targetMenu.menuItemDescription
     
         self.countLabel.text = "\(itemCount)"
 }
@@ -173,5 +176,61 @@ func LoadImageViews(){
         
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*CGFloat(pageCount), 0)
 
+    }
+
+    func LoadItemTableArray(){
+        
+        //1.    create NSQueue's
+        //      one for the inital pull from parse
+        //      second to process each image in the back ground
+        let queue = NSOperationQueue()
+        
+        
+        //2.    create a new PFQuery
+        let query:PFQuery = PFQuery(className: "MenuItem")
+        query.whereKey("objectId", equalTo:targetMenu.objectID)
+        
+        
+        //3.    Get Menu Items from PARSE in the background (Fork queue)
+        queue.addOperationWithBlock() {
+            
+            query.findObjectsInBackgroundWithBlock({ (objects: [PFObject]?, error: NSError?) -> Void in
+                if error == nil{
+                    
+                    //  loop through the objects array
+                    //  Retrieve the values from the PFObject
+                    for foodPicture in objects!{
+                        self.itemList = ((foodPicture as PFObject)["items"] as? [String])!
+                    }
+                    //4.    When Downloading is Finished (Join queue)
+                    NSOperationQueue.mainQueue().addOperationWithBlock() {
+                        self.itemsTable.reloadData()
+                    }
+                }else {
+                    print("Error: \(error!) \(error!.userInfo)")
+                }
+            })
+        }
+    }
+
+
+}
+
+
+
+// MARK: - UITableViewDataSource
+extension FoodScrollViewController2: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.itemList.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("tableCell")! as UITableViewCell
+        cell.backgroundColor = UIColor.clearColor()
+        
+        cell.textLabel?.text = itemList[indexPath.row]
+        
+        return cell
     }
 }

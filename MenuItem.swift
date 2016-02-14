@@ -13,16 +13,14 @@ import ParseUI
 class MenuItem: NSObject {
     
     var name: String!
-    var ingredients: String!
     var pffImage: PFFile!
     var price: String!
     var objectID: String!
     var menuItemDescription: String!
     var priceInt: Int!
     
-    init(name: String, ingredients: String, pffImage: PFFile, price: String, objectID: String, menuItemDescription: String, priceInt: Int) {
+    init(name: String,  menuItemDescription: String, pffImage: PFFile, price: String, objectID: String, priceInt: Int) {
         self.name = name
-        self.ingredients = ingredients
         self.pffImage = pffImage
         self.price = price
         self.objectID = objectID
