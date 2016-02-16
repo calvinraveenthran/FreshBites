@@ -10,15 +10,24 @@ import Foundation
 import UIKit
 
 class CheckoutTableViewCell: UITableViewCell {
+         var buttonDelegate: CheckoutTableViewCellDelegate?
 
-
-    @IBOutlet weak var minusButton: UIButton!
-    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var itemQuantityLabel: UILabel!
     @IBOutlet weak var checkoutTableCellView: UIView!
 
     @IBOutlet weak var foodItemName: UILabel!
     @IBOutlet weak var foodItemComments: UILabel!
+    @IBAction func addValuesButton(sender: AnyObject) {
+        if let delegate = buttonDelegate {
+            delegate.cellTapped(self, action: 0)
+        }
+       
+    }
+    @IBAction func removeValuesButton(sender: AnyObject) {
+        if let delegate = buttonDelegate {
+            delegate.cellTapped(self, action: 1)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

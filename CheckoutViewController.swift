@@ -8,14 +8,27 @@
 
 import Foundation
 
-class CheckoutViewController : UIViewController{
-    
+enum ButtonAction: Int {
+    case ADD = 0, MINUS
+}
+
+
+protocol CheckoutTableViewCellDelegate {
+    func cellTapped(cell: CheckoutTableViewCell, action: Int)
+}
+
+class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate{
+    var checkoutArray: [OrderItem] = UserSessionManager.userSharedManager.checkoutArray
+    var totalSum: Int = 0
     
     @IBOutlet weak var priceLabel: UILabel!   
     @IBOutlet var menu: UIBarButtonItem!
     @IBOutlet weak var checkoutTableView: UITableView!
     
-    var checkoutArray: [OrderItem] = UserSessionManager.userSharedManager.checkoutArray
+    @IBAction func updateShoppingCartButton(sender: AnyObject) {
+        updatePrice()
+    }
+    
    
     
     
@@ -29,12 +42,42 @@ class CheckoutViewController : UIViewController{
         
         super.viewDidLoad()
         checkoutTableView.dataSource = self
+        UpdatePriceLabel()
             
+    }
+    
+    func cellTapped(cell: CheckoutTableViewCell, action: Int) {
+        
+        let row = checkoutTableView.indexPathForCell(cell)!.row
+        
+        
+            if action == ButtonAction.ADD.rawValue && self.checkoutArray[row].quantity < 10{
+                self.checkoutArray[row].quantity  = self.checkoutArray[row].quantity + 1
+            }else if action == ButtonAction.MINUS.rawValue && self.checkoutArray[row].quantity > 0{
+                self.checkoutArray[row].quantity  = self.checkoutArray[row].quantity - 1
+            }
+            
+            self.checkoutTableView.reloadData()
+    }
+    
+    func updatePrice(){
+        for var i = 0; i < self.checkoutArray.count ; ++i {
+            UserSessionManager.userSharedManager.checkoutArray[i].quantity = self.checkoutArray[i].quantity
+        }
+        UpdatePriceLabel()
+    }
+    
+    func UpdatePriceLabel(){
+        totalSum = 0
+        for var i = 0; i < self.checkoutArray.count ; ++i {
+            totalSum += self.checkoutArray[i].quantity*self.checkoutArray[i].price
+        }
+        self.priceLabel.text = "\(totalSum)"
     }
 
 }
 
-extension CheckoutViewController: UITableViewDataSource {
+extension CheckoutViewController: UITableViewDataSource{
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return checkoutArray.count
@@ -49,6 +92,14 @@ extension CheckoutViewController: UITableViewDataSource {
         cell.foodItemName.text = review.name
         cell.foodItemComments.text = review.comments
         cell.itemQuantityLabel.text = "\(review.quantity)"
+        
+        
+        if cell.buttonDelegate == nil {
+            cell.buttonDelegate = self
+        }
+        
         return cell
     }
+    
+
 }
