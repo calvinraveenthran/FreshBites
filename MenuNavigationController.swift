@@ -15,8 +15,8 @@ class MenuNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.barTintColor = UIColor.midnightBlueColor()
-        self.navigationBar.backgroundColor = UIColor.midnightBlueColor()
+        //self.navigationBar.barTintColor = UIColor.midnightBlueColor()
+        //self.navigationBar.backgroundColor = UIColor.midnightBlueColor()
     }
     
 

@@ -28,7 +28,7 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
         super.viewDidLoad()
         
         //1.    Set Background Color
-        self.tableView.backgroundColor = UIColor.midnightBlueColor()
+        //self.tableView.backgroundColor = UIColor.midnightBlueColor()
         
         //2.    Setting Up Side Navigation
         menu.target = self.revealViewController()

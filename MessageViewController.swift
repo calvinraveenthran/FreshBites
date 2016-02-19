@@ -72,7 +72,7 @@ class MessageViewController:  UIViewController{
         
         //2.    create a new PFQuery
         let query:PFQuery = PFQuery(className: "Messages")
-        query.orderByAscending("updatedAt")
+        query.orderByDescending("updatedAt")
         query.whereKey("messageId", equalTo:(self.conversationId))
         
         

@@ -2421,9 +2421,6 @@
                                         <state key="normal" title="Send">
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="8" y="98" width="384" height="55"/>
-                                        </variation>
                                         <connections>
                                             <action selector="sendMessageButton:" destination="LHD-xe-Dzh" eventType="touchUpInside" id="6u1-Vu-vZx"/>
                                         </connections>
@@ -2457,8 +2454,7 @@
                                         <exclude reference="myo-vx-xjn"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="639" width="400" height="161"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="KtP-jH-xhj"/>
                                         <include reference="sP0-sP-6mO"/>
@@ -2484,7 +2480,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v84-co-rdh" id="Ekq-uS-fs3">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="141"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="144"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYR-Td-2OF">
@@ -2544,14 +2540,14 @@
                                                     <exclude reference="Txi-bR-a46"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="3jn-qq-h7Q"/>
-                                                    <exclude reference="MwB-B8-d8f"/>
                                                     <exclude reference="5zT-f8-Kcw"/>
                                                     <exclude reference="9Pm-yN-Zaa"/>
                                                     <exclude reference="MrM-vb-dy4"/>
                                                     <exclude reference="ZZJ-lj-ze9"/>
                                                     <exclude reference="gqE-ac-mdg"/>
                                                     <exclude reference="jac-eH-BhB"/>
+                                                    <exclude reference="3jn-qq-h7Q"/>
+                                                    <exclude reference="MwB-B8-d8f"/>
                                                     <exclude reference="60B-1x-YDb"/>
                                                     <exclude reference="Mb0-4Q-zOO"/>
                                                     <exclude reference="Vv1-gf-jSW"/>
@@ -2565,14 +2561,14 @@
                                                     <include reference="Txi-bR-a46"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="3jn-qq-h7Q"/>
-                                                    <include reference="MwB-B8-d8f"/>
                                                     <include reference="5zT-f8-Kcw"/>
                                                     <include reference="9Pm-yN-Zaa"/>
                                                     <include reference="MrM-vb-dy4"/>
                                                     <include reference="ZZJ-lj-ze9"/>
                                                     <include reference="gqE-ac-mdg"/>
                                                     <include reference="jac-eH-BhB"/>
+                                                    <include reference="3jn-qq-h7Q"/>
+                                                    <include reference="MwB-B8-d8f"/>
                                                     <include reference="60B-1x-YDb"/>
                                                     <include reference="Mb0-4Q-zOO"/>
                                                     <include reference="Vv1-gf-jSW"/>
@@ -2588,9 +2584,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="567"/>
-                                </variation>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -2611,14 +2604,14 @@
                                 <exclude reference="mHi-K2-Ihi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="N5m-bU-Pzs"/>
-                                <exclude reference="UKy-rW-1RV"/>
-                                <exclude reference="n1X-Vi-glo"/>
+                                <exclude reference="8SG-hJ-bUj"/>
                                 <exclude reference="Lb5-K1-Iay"/>
                                 <exclude reference="bbo-Q8-jf3"/>
                                 <exclude reference="sEd-rN-Gh0"/>
                                 <exclude reference="vuY-st-All"/>
-                                <exclude reference="8SG-hJ-bUj"/>
+                                <exclude reference="N5m-bU-Pzs"/>
+                                <exclude reference="UKy-rW-1RV"/>
+                                <exclude reference="n1X-Vi-glo"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -2627,14 +2620,14 @@
                                 <include reference="mHi-K2-Ihi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="N5m-bU-Pzs"/>
-                                <include reference="UKy-rW-1RV"/>
-                                <include reference="n1X-Vi-glo"/>
+                                <include reference="8SG-hJ-bUj"/>
                                 <include reference="Lb5-K1-Iay"/>
                                 <include reference="bbo-Q8-jf3"/>
                                 <include reference="sEd-rN-Gh0"/>
                                 <include reference="vuY-st-All"/>
-                                <include reference="8SG-hJ-bUj"/>
+                                <include reference="N5m-bU-Pzs"/>
+                                <include reference="UKy-rW-1RV"/>
+                                <include reference="n1X-Vi-glo"/>
                             </mask>
                         </variation>
                     </view>

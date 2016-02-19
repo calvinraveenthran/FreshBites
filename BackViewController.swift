@@ -15,8 +15,8 @@ class BackViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.midnightBlueColor()
-        self.backTableView.backgroundColor = UIColor.midnightBlueColor()
+        //self.view.backgroundColor = UIColor.midnightBlueColor()
+        //self.backTableView.backgroundColor = UIColor.midnightBlueColor()
         self.backTableView.dataSource = self
         self.backTableView.delegate = self
 
@@ -38,7 +38,7 @@ extension BackViewController: UITableViewDataSource {
         var cell = tableView.dequeueReusableCellWithIdentifier(backTableArray[indexPath.row], forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = backTableArray[indexPath.row]
-        cell.backgroundColor = UIColor.midnightBlueColor()
+        //cell.backgroundColor = UIColor.midnightBlueColor()
         
         return cell
     }
