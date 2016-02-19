@@ -11,7 +11,7 @@ class BackViewController: UIViewController {
 
     
     @IBOutlet weak var backTableView: UITableView!
-    var  backTableArray = ["Menu", "Checkout"]
+    var  backTableArray = ["Menu", "Checkout", "Messages"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
