@@ -13,9 +13,10 @@ import Parse
 import ParseUI
 
 
-class ConversationsTableViewController:  UITableViewController{
+class ConversationsTableViewController:  UITableViewController,CatererListTableViewControllerDelegate{
     @IBOutlet weak var menu: UIBarButtonItem!
     private var conversationItems: [Conversations] = []
+    private var catererNames: [String] = []
 
     override func viewDidLoad() {
     
@@ -54,6 +55,9 @@ class ConversationsTableViewController:  UITableViewController{
             
             let messageViewController = segue.destinationViewController as! MessageViewController
             messageViewController.conversationId = target.conversationId
+        } else if segue.identifier == "AddCaterer" {
+            let messageViewController = segue.destinationViewController as! CatererListTableViewController
+            messageViewController.delegate = self
         }
     }
     
@@ -84,6 +88,7 @@ class ConversationsTableViewController:  UITableViewController{
                         let message:Bool? = (conversationProperty as PFObject)["newMessage"] as? Bool
                         
                         let loadedMenuItem = Conversations(catererName: caterer!,  conversationId: cId!, newMessage: message!)
+                        self.catererNames.append(caterer!)
                         self.conversationItems.append(loadedMenuItem)
                     }
                     
@@ -95,6 +100,59 @@ class ConversationsTableViewController:  UITableViewController{
                     print("Error: \(error!) \(error!.userInfo)")
                 }
             })
+        }
+    }
+    
+    func appendToConversations(childObject:String){
+        if !self.catererNames.contains(childObject){
+            catererNames.append(childObject)
+            var conversationsSend = PFObject(className:"Conversations")
+            
+            conversationsSend["customer"] = PFUser.currentUser()?.username
+            conversationsSend["customerId"] = PFUser.currentUser()?.objectId
+            conversationsSend["caterer"] = childObject
+            conversationsSend["newMessage"] = true
+            
+            //Also push to the backend
+            conversationsSend.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                    let queue = NSOperationQueue()
+                    //2.    create a new PFQuery
+                    let query:PFQuery = PFQuery(className: "Conversations")
+                    query.whereKey("customerId", equalTo:(PFUser.currentUser()?.objectId)!)
+                    query.whereKey("caterer", equalTo:childObject)
+                    
+                    queue.addOperationWithBlock() {
+                        query.findObjectsInBackgroundWithBlock({ (objects: [PFObject]?, error: NSError?) -> Void in
+                            if error == nil{
+                                //  loop through the objects array
+                                //  Retrieve the values from the PFObject
+                                for conversationProperty in objects!{
+                                    let caterer:String? = (conversationProperty as PFObject)["caterer"] as? String
+                                    let cId:String? = conversationProperty.objectId
+                                    let message:Bool? = (conversationProperty as PFObject)["newMessage"] as? Bool
+                                    
+                                    let loadedMenuItem = Conversations(catererName: caterer!,  conversationId: cId!, newMessage: message!)
+                                    self.conversationItems.append(loadedMenuItem)
+                                }
+                                
+                                //4.    When Downloading is Finished (Join queue)
+                                NSOperationQueue.mainQueue().addOperationWithBlock() {
+                                    self.tableView.reloadData()
+                                }
+                            }else {
+                                print("Error: \(error!) \(error!.userInfo)")
+                            }
+                        })
+                    }
+                }else {
+                    // There was a problem, check error.description
+                }
+            }
+            
+
         }
     }
 
