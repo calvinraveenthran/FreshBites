@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import UIKit
+import CoreData
+import Parse
+import ParseUI
 
 enum ButtonAction: Int {
     case ADD = 0, MINUS
@@ -17,11 +21,11 @@ protocol CheckoutTableViewCellDelegate {
     func cellTapped(cell: CheckoutTableViewCell, action: Int)
 }
 
-class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate{
+class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate {
     var checkoutArray: [OrderItem] = UserSessionManager.userSharedManager.checkoutArray
     var totalSum: Int = 0
     
-    @IBOutlet weak var priceLabel: UILabel!   
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet var menu: UIBarButtonItem!
     @IBOutlet weak var checkoutTableView: UITableView!
     
@@ -32,6 +36,33 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate{
    
     
     
+    @IBAction func proceedToCheckoutButton(sender: AnyObject) {
+        for foodOrder in UserSessionManager.userSharedManager.checkoutArray {
+            let orderSend = PFObject(className:"Orders")
+            
+            orderSend["customerName"] = PFUser.currentUser()?.username
+            orderSend["foodName"] = foodOrder.name
+            orderSend["foodId"] = foodOrder.objectID
+            orderSend["quantity"] = foodOrder.quantity
+            orderSend["comments"] = foodOrder.comments
+            orderSend["price"] = foodOrder.price
+            
+            orderSend.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                } else {
+                    // There was a problem, check error.description
+                }
+            }
+            
+        }
+        
+        UserSessionManager.userSharedManager.checkoutArray.removeAll()
+        checkoutArray = UserSessionManager.userSharedManager.checkoutArray
+        self.checkoutTableView.reloadData()
+        
+    }
     override func viewDidLoad() {
         
         // Do any additional setup after loading the view, typically from a nib.

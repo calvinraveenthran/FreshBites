@@ -2028,12 +2028,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/CheckoutViewController.swift"
-            timestampString = "477288297.97607"
+            timestampString = "477695835.491711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2048,9 +2048,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "CheckoutViewController"
-            landmarkType = "3">
+            endingLineNumber = "20">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2060,12 +2058,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/CheckoutViewController.swift"
-            timestampString = "477288297.97607"
+            timestampString = "477695835.491711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "cellTapped(_:action:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2076,12 +2074,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/CheckoutViewController.swift"
-            timestampString = "477288297.97607"
+            timestampString = "477695835.491711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "cellTapped(_:action:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2097,8 +2095,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "updateShoppingCartButton(_:)"
-            landmarkType = "5">
+            landmarkName = "CheckoutViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

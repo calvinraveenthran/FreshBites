@@ -247,6 +247,9 @@
                                         <include reference="VKE-Ey-zyw"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="proceedToCheckoutButton:" destination="99s-H0-qM8" eventType="touchUpInside" id="Gfm-ed-DEP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-5k-aD7">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
