@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import Parse
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // [Optional] Power your app with Local Datastore. For more info, go to
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("KxAs5Ob7jKiAn78k83cjllUv4BRxUFPJu0ktHZKl",
+            clientKey: "Am22B0RUlpMCJ9zTNAa0o1xOi5dhQZfWcGawpilY");
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions);
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions);
+        
+        
+        
         return true
     }
 
@@ -40,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
 
 }
