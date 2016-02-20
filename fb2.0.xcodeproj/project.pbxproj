@@ -120,6 +120,8 @@
 		0F88E57C1C76AB4B00848D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F88E57A1C76AB4B00848D69 /* Main.storyboard */; };
 		0F88E57E1C76ECDD00848D69 /* CatererListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88E57D1C76ECDD00848D69 /* CatererListTableViewController.swift */; };
 		0F88E5801C76FD2400848D69 /* CaterersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88E57F1C76FD2400848D69 /* CaterersTableViewCell.swift */; };
+		0F90FC6C1C79180000EE6C7E /* OrderHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90FC6B1C79180000EE6C7E /* OrderHistoryTableViewController.swift */; };
+		0F90FC6E1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90FC6D1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift */; };
 		0FA2A4121C35A8D400A2E2E7 /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A4111C35A8D400A2E2E7 /* MenuNavigationController.swift */; };
 		0FA2A4141C35B3D300A2E2E7 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A4131C35B3D300A2E2E7 /* UIColorExtensions.swift */; };
 		0FA2A4161C35BB4B00A2E2E7 /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A4151C35BB4B00A2E2E7 /* BackViewController.swift */; };
@@ -270,6 +272,8 @@
 		0F88E57B1C76AB4B00848D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F88E57D1C76ECDD00848D69 /* CatererListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatererListTableViewController.swift; sourceTree = "<group>"; };
 		0F88E57F1C76FD2400848D69 /* CaterersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaterersTableViewCell.swift; sourceTree = "<group>"; };
+		0F90FC6B1C79180000EE6C7E /* OrderHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryTableViewController.swift; sourceTree = "<group>"; };
+		0F90FC6D1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		0FA2A4111C35A8D400A2E2E7 /* MenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
 		0FA2A4131C35B3D300A2E2E7 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		0FA2A4151C35BB4B00A2E2E7 /* BackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
@@ -542,6 +546,7 @@
 			children = (
 				0FE2992A1C2DC5E500F88E9A /* MenuTableViewController.swift */,
 				0FA6F9851C72F3430042FB6F /* ConversationsTableViewController.swift */,
+				0F90FC6B1C79180000EE6C7E /* OrderHistoryTableViewController.swift */,
 				0F88E57D1C76ECDD00848D69 /* CatererListTableViewController.swift */,
 				0F59770E1C76A7F60026F5E5 /* MessageViewController.swift */,
 				0FA2A4111C35A8D400A2E2E7 /* MenuNavigationController.swift */,
@@ -569,6 +574,7 @@
 				0FDF94861C2FEBC9004A2034 /* MenuItemTableViewCell.swift */,
 				0F8632781C759FFD008F0B42 /* ConversationsTableViewCell.swift */,
 				0F88E57F1C76FD2400848D69 /* CaterersTableViewCell.swift */,
+				0F90FC6D1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift */,
 				0F639AF11C53F6A800B001BE /* FeedbackTableViewCell.swift */,
 				0F765DA41C54975500C4D2BF /* CheckoutTableViewCell.swift */,
 				0F86327C1C75BC9F008F0B42 /* MessageTableViewCell.swift */,
@@ -830,7 +836,9 @@
 				0FC143131BFAE2770033806F /* AppDelegate.swift in Sources */,
 				0FE2992B1C2DC5E500F88E9A /* MenuTableViewController.swift in Sources */,
 				0F5C29261C30D1FD005F8CD5 /* MenuItem.swift in Sources */,
+				0F90FC6C1C79180000EE6C7E /* OrderHistoryTableViewController.swift in Sources */,
 				0FA2A4121C35A8D400A2E2E7 /* MenuNavigationController.swift in Sources */,
+				0F90FC6E1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift in Sources */,
 				0F8632771C7596D8008F0B42 /* Conversations.swift in Sources */,
 				0F639AF21C53F6A800B001BE /* FeedbackTableViewCell.swift in Sources */,
 				0FE299701C2F86D200F88E9A /* EmptySegue.m in Sources */,

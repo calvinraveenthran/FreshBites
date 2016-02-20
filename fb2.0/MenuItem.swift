@@ -59,3 +59,20 @@ class OrderItem: NSObject{
     }
 
 }
+
+class OrderHistory: NSObject{
+    var name: String!
+    var quantity: Int!
+    var price: Int!
+    var date:String!
+    
+    init(name: String, quantity: Int, price: Int , date: String) {
+        
+        self.name = name
+        self.quantity = quantity
+        self.price = price
+        self.date = date
+    }
+}
+
+

@@ -17,7 +17,7 @@ class BackViewController: UIViewController {
 
     
     @IBOutlet weak var backTableView: UITableView!
-    var  backTableArray = ["Menu", "Checkout", "Messages", "Profile", "Logout"]
+    var  backTableArray = ["Menu", "Checkout", "Messages", "Profile", "Order History", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +53,7 @@ extension BackViewController: UITableViewDataSource {
 extension BackViewController: UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row == 4{
+        if indexPath.row == 5{
             UserSessionManager.userSharedManager.checkoutArray.removeAll()
             PFUser.logOut()
             self.dismissViewControllerAnimated(true, completion: nil)
