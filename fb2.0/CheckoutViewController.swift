@@ -60,6 +60,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate {
         
         UserSessionManager.userSharedManager.checkoutArray.removeAll()
         checkoutArray = UserSessionManager.userSharedManager.checkoutArray
+        self.priceLabel.text = "0"
         self.checkoutTableView.reloadData()
         
     }
