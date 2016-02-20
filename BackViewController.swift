@@ -11,7 +11,7 @@ class BackViewController: UIViewController {
 
     
     @IBOutlet weak var backTableView: UITableView!
-    var  backTableArray = ["Menu", "Checkout", "Messages", "Profile"]
+    var  backTableArray = ["Menu", "Checkout", "Messages", "Profile", "Logout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,10 @@ extension BackViewController: UITableViewDataSource {
 extension BackViewController: UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.backTableView.reloadData()
+        if indexPath.row == 4{
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }else{
+            self.backTableView.reloadData()
+        }
     }
 }

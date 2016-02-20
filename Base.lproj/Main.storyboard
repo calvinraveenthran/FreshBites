@@ -2356,29 +2356,29 @@
                                 <exclude reference="yR2-gF-ZiG"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="o0Y-AV-fOq"/>
-                                <exclude reference="14q-3U-wAi"/>
-                                <exclude reference="Rcz-l3-jnt"/>
-                                <exclude reference="SRU-dF-CX1"/>
-                                <exclude reference="k9b-lQ-ZeD"/>
-                                <exclude reference="213-pS-edq"/>
-                                <exclude reference="2K4-Mz-ymq"/>
-                                <exclude reference="xdB-Oz-S9p"/>
-                                <exclude reference="8Mm-04-heH"/>
-                                <exclude reference="SOR-sZ-seX"/>
                                 <exclude reference="d5K-Lz-eTl"/>
                                 <exclude reference="tNc-CZ-NIo"/>
                                 <exclude reference="yYk-1r-UTz"/>
-                                <exclude reference="ZPF-8f-ngl"/>
-                                <exclude reference="whU-0O-dWQ"/>
+                                <exclude reference="213-pS-edq"/>
+                                <exclude reference="2K4-Mz-ymq"/>
+                                <exclude reference="xdB-Oz-S9p"/>
                                 <exclude reference="DSy-hZ-qF4"/>
                                 <exclude reference="Ifl-P0-zqV"/>
                                 <exclude reference="wY6-8A-Stn"/>
                                 <exclude reference="zcH-3h-7B1"/>
+                                <exclude reference="14q-3U-wAi"/>
+                                <exclude reference="Rcz-l3-jnt"/>
                                 <exclude reference="3jR-FC-HlM"/>
                                 <exclude reference="Phz-VP-OhW"/>
                                 <exclude reference="lW2-yX-qmk"/>
                                 <exclude reference="miC-LU-17w"/>
+                                <exclude reference="SRU-dF-CX1"/>
+                                <exclude reference="k9b-lQ-ZeD"/>
+                                <exclude reference="o0Y-AV-fOq"/>
+                                <exclude reference="8Mm-04-heH"/>
+                                <exclude reference="SOR-sZ-seX"/>
+                                <exclude reference="ZPF-8f-ngl"/>
+                                <exclude reference="whU-0O-dWQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -2394,29 +2394,29 @@
                                 <include reference="yR2-gF-ZiG"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="o0Y-AV-fOq"/>
-                                <include reference="14q-3U-wAi"/>
-                                <include reference="Rcz-l3-jnt"/>
-                                <include reference="SRU-dF-CX1"/>
-                                <include reference="k9b-lQ-ZeD"/>
-                                <include reference="213-pS-edq"/>
-                                <include reference="2K4-Mz-ymq"/>
-                                <include reference="xdB-Oz-S9p"/>
-                                <include reference="8Mm-04-heH"/>
-                                <include reference="SOR-sZ-seX"/>
                                 <include reference="d5K-Lz-eTl"/>
                                 <include reference="tNc-CZ-NIo"/>
                                 <include reference="yYk-1r-UTz"/>
-                                <include reference="ZPF-8f-ngl"/>
-                                <include reference="whU-0O-dWQ"/>
+                                <include reference="213-pS-edq"/>
+                                <include reference="2K4-Mz-ymq"/>
+                                <include reference="xdB-Oz-S9p"/>
                                 <include reference="DSy-hZ-qF4"/>
                                 <include reference="Ifl-P0-zqV"/>
                                 <include reference="wY6-8A-Stn"/>
                                 <include reference="zcH-3h-7B1"/>
+                                <include reference="14q-3U-wAi"/>
+                                <include reference="Rcz-l3-jnt"/>
                                 <include reference="3jR-FC-HlM"/>
                                 <include reference="Phz-VP-OhW"/>
                                 <include reference="lW2-yX-qmk"/>
                                 <include reference="miC-LU-17w"/>
+                                <include reference="SRU-dF-CX1"/>
+                                <include reference="k9b-lQ-ZeD"/>
+                                <include reference="o0Y-AV-fOq"/>
+                                <include reference="8Mm-04-heH"/>
+                                <include reference="SOR-sZ-seX"/>
+                                <include reference="ZPF-8f-ngl"/>
+                                <include reference="whU-0O-dWQ"/>
                             </mask>
                         </variation>
                     </view>
@@ -2503,6 +2503,16 @@
                                         <connections>
                                             <segue destination="73O-Z2-xi1" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="WYH-Jf-y7F"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logout" id="fKo-av-KnU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fKo-av-KnU" id="EEL-Ti-tcG">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

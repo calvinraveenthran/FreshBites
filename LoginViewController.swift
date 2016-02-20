@@ -53,6 +53,8 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
                 self.actInd.stopAnimating()
                 
                 if ((user != nil)){
+                    self.usernameField.text = ""
+                    self.passwordField.text = ""
                     let alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                     
