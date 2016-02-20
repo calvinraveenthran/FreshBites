@@ -7,6 +7,12 @@
 //
 
 import Foundation
+import Foundation
+import UIKit
+import CoreData
+import Parse
+import ParseUI
+
 class BackViewController: UIViewController {
 
     
@@ -48,7 +54,8 @@ extension BackViewController: UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 4{
-            UserSessionManager.userSharedManager.checkoutArray = []
+            UserSessionManager.userSharedManager.checkoutArray.removeAll()
+            PFUser.logOut()
             self.dismissViewControllerAnimated(true, completion: nil)
         }else{
             self.backTableView.reloadData()
