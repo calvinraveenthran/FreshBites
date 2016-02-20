@@ -42,13 +42,13 @@ extension BackViewController: UITableViewDataSource {
         
         return cell
     }
-
 }
 
 extension BackViewController: UITableViewDelegate{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 4{
+            UserSessionManager.userSharedManager.checkoutArray = []
             self.dismissViewControllerAnimated(true, completion: nil)
         }else{
             self.backTableView.reloadData()
