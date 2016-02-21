@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import ParseUI
 
-class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UIAlertViewDelegate  {
+class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UIAlertViewDelegate, UITextFieldDelegate  {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -19,7 +19,15 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.usernameField.delegate = self;
+        self.passwordField.delegate = self;
     
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     override func viewDidAppear(animated: Bool) {

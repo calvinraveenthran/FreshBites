@@ -19,7 +19,7 @@ protocol FoodScrollViewController2Delegate{
     func appendToCheckout(childCheckoutObject:OrderItem)
 }
 
-class FoodScrollViewController2: UIViewController, UIScrollViewDelegate{
+class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextFieldDelegate{
         //Class Outlets
         @IBOutlet weak var itemsTable: UITableView!
         @IBOutlet weak var commentsTextField: UITextField!
@@ -92,6 +92,13 @@ override func viewDidLoad() {
         //self.itemDescriptionDescriptionTextView.text = targetMenu.menuItemDescription
     
         self.countLabel.text = "\(itemCount)"
+    
+        self.commentsTextField.delegate = self;
+}
+    
+func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
 }
     
     

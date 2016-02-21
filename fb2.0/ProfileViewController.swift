@@ -12,7 +12,7 @@ import CoreData
 import Parse
 import ParseUI
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var postalCodeTextField: UITextField!
@@ -32,9 +32,18 @@ class ProfileViewController: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         super.viewDidLoad()
         
+        self.phoneNumberTextField.delegate = self;
+        self.postalCodeTextField.delegate = self;
+        self.cityTextField.delegate = self;
+        self.addressTextField.delegate = self;
         self.loadCurrentValues()
         
         
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func loadCurrentValues(){

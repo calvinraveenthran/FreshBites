@@ -13,7 +13,7 @@ import Parse
 import ParseUI
 
 
-class MessageViewController:  UIViewController{
+class MessageViewController:  UIViewController, UITextFieldDelegate {
     private var messages: [Message] = []
     var conversationId: String = ""
     
@@ -60,6 +60,12 @@ class MessageViewController:  UIViewController{
         super.viewDidLoad()
         tableView.dataSource = self
         self.LoadMessages()
+        self.messageTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func LoadMessages(){

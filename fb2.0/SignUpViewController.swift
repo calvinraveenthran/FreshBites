@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SignUpViewController: UIViewController, UIAlertViewDelegate {
+class SignUpViewController: UIViewController, UIAlertViewDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -27,6 +27,16 @@ class SignUpViewController: UIViewController, UIAlertViewDelegate {
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         view.addSubview(self.actInd)
         // Do any additional setup after loading the view.
+        
+        self.username.delegate = self;
+        self.email.delegate = self;
+        self.password.delegate = self;
+        self.confirmPassword.delegate = self;
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
     override func didReceiveMemoryWarning() {

@@ -23,7 +23,7 @@ enum Rating: Int {
 }
 
 
-class FeedbackViewController: UIViewController{
+class FeedbackViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var feedbackTableView: UITableView!
     
@@ -56,7 +56,15 @@ class FeedbackViewController: UIViewController{
         
         feedbackTableView.dataSource = self
         self.retrieveFeedback()
+        
+        self.nameField.delegate = self;
+        self.feedbackField.delegate = self;
 
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     // MARK: - Private Methods
