@@ -72,13 +72,6 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
         return cell
     }
     
-  /*  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let targetMenu = menuItems[indexPath.row]
-
-        performSegueWithIdentifier("showTargetMenu", sender: targetMenu)
-    }*/
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showTargetMenu" {
             
@@ -114,7 +107,7 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
         let queue2 = NSOperationQueue()
         
         //2.    create a new PFQuery
-        let query:PFQuery = PFQuery(className: "MenuItem")
+        let query:PFQuery = PFQuery(className: "Menu")
         
         //3.    Get Menu Items from PARSE in the background (Fork queue)
         queue.addOperationWithBlock() {
@@ -128,12 +121,12 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
                         let foodItemName:String? = (foodItem as PFObject)["name"] as? String
                         let foodItemDescription:String? = (foodItem as PFObject)["description"] as? String
                         let foodItemPrice:String? = (foodItem as PFObject)["price"] as? String
-                        let PFFImage:PFFile? = (foodItem as PFObject)["image"] as? PFFile
+                        let PFFImage:PFFile? = (foodItem as PFObject)["menuCover"] as? PFFile
                         let foodItemObjectId:String? = foodItem.objectId
-                        let foodItemPriceInt:Int? = (foodItem as PFObject)["priceInt"] as? Int
+                        let foodItemOwner:String? = (foodItem as PFObject)["owner"] as? String
                         
                         //Append to Menu List
-                        let loadedMenuItem = MenuItem(name:foodItemName!, menuItemDescription:foodItemDescription!,pffImage:PFFImage!,price:foodItemPrice!, objectID:foodItemObjectId!, priceInt:foodItemPriceInt!)
+                        let loadedMenuItem = MenuItem(name:foodItemName!, menuItemDescription:foodItemDescription!,pffImage:PFFImage!,price:foodItemPrice!, objectID:foodItemObjectId!, owner: foodItemOwner!)
                         self.menuItems.append(loadedMenuItem)
                     }
                     

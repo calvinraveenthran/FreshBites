@@ -28,11 +28,13 @@ class Message: NSObject {
     var sender: String!
     var conversationId: String!
     var message: String!
+    var receiver: String!
     
-    init(sender: String,  conversationId: String, message: String) {
+    init(sender: String,  conversationId: String, message: String, receiver: String) {
         self.sender = sender
         self.conversationId = conversationId
         self.message = message
+        self.receiver = receiver
     }
     
     

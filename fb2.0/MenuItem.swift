@@ -17,15 +17,15 @@ class MenuItem: NSObject {
     var price: String!
     var objectID: String!
     var menuItemDescription: String!
-    var priceInt: Int!
+    var owner: String!
     
-    init(name: String,  menuItemDescription: String, pffImage: PFFile, price: String, objectID: String, priceInt: Int) {
+    init(name: String,  menuItemDescription: String, pffImage: PFFile, price: String, objectID: String, owner: String) {
         self.name = name
         self.pffImage = pffImage
         self.price = price
         self.objectID = objectID
         self.menuItemDescription = menuItemDescription
-        self.priceInt = priceInt
+        self.owner = owner
     }
     
     
@@ -48,14 +48,16 @@ class OrderItem: NSObject{
     var quantity: Int!
     var comments: String!
     var price: Int!
+    var owner: String!
     
-    init(name: String, objectID: String, quantity: Int, comments: String, price: Int) {
+    init(name: String, objectID: String, quantity: Int, comments: String, price: Int, owner: String) {
 
         self.name = name
         self.objectID = objectID
         self.quantity = quantity
         self.comments = comments
         self.price = price
+        self.owner = owner
     }
 
 }

@@ -29,9 +29,12 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
         var delegate : FoodScrollViewController2Delegate! = nil
     
     
-        private var pageImages = [String:UIImage]()
-        private var pages: [MenuItemPicture] = []
-        private var itemList: [String]=[]
+        private var pageImages: [UIImage] = []
+        private var itemList : NSMutableArray = []
+    
+    
+        private var urlArrays: [PFFile] = []
+        private var pictureCount: Int = 0
     
         //Variable of Controller Delegate (The Menu Item Selected in previous Table)
         var targetMenu: MenuItem!    
@@ -44,10 +47,11 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
                 let name:String = self.targetMenu.name
                 let objectID:String = self.targetMenu.objectID
                 let quantity:Int = self.itemCount
-                let price:Int = self.targetMenu.priceInt
+                let price:Int = Int(self.targetMenu.price)!
                 let comments:String = (self.commentsTextField.text)!
+                let owner:String = self.targetMenu.owner
             
-                let loadedOrder = OrderItem(name: name, objectID: objectID, quantity: quantity, comments:comments, price:price)
+                let loadedOrder = OrderItem(name: name, objectID: objectID, quantity: quantity, comments:comments, price:price, owner:owner)
             
                 let alert = UIAlertController(title: "Success", message: "Item Added", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
@@ -82,6 +86,7 @@ override func viewDidLoad() {
         super.viewDidLoad()
     
         self.itemsTable.dataSource = self
+        self.itemsTable.delegate = self
         //1. Set BcckGround Color
         //self.view.backgroundColor = UIColor.midnightBlueColor()
     
@@ -112,8 +117,8 @@ func LoadImageViews(){
         
         
         //2.    create a new PFQuery
-        let query:PFQuery = PFQuery(className: "images")
-        query.whereKey("menuItemObjectID", equalTo:targetMenu.objectID)
+        let query:PFQuery = PFQuery(className: "Menu")
+        query.whereKey("objectId", equalTo:targetMenu.objectID)
         
         
         //3.    Get Menu Items from PARSE in the background (Fork queue)
@@ -125,31 +130,28 @@ func LoadImageViews(){
                     //  loop through the objects array
                     //  Retrieve the values from the PFObject
                     for foodPicture in objects!{
-                        let PFFImage:PFFile? = (foodPicture as PFObject)["foodImages"] as? PFFile
-                        let objectId:String? = foodPicture.objectId
-                    
-                        //  Append to PageImages Array
-                        let loadedPicture = MenuItemPicture(pffImage: PFFImage!, objectID: objectId!)
-                        self.pages.append(loadedPicture)
+                        
+                        self.urlArrays = (foodPicture as PFObject)["menuPhotos"] as! [PFFile]
+                        self.pictureCount = self.urlArrays.count
                     }
                     
                     //4.    When Downloading is Finished (Join queue)
                     NSOperationQueue.mainQueue().addOperationWithBlock() {
-                            for foodPicture in self.pages{
+                            for foodPicture in self.urlArrays{
                                 
                                 //5.    Now go and get the actual image with PFFIMage Key.(Fork queue 2)
                                 queue2.addOperationWithBlock() {
-                                    foodPicture.pffImage?.getDataInBackgroundWithBlock({ (imageData, error) -> Void in
+                                    foodPicture.getDataInBackgroundWithBlock({ (imageData, error) -> Void in
                                         if error == nil{
                                             let foodItemImage = UIImage(data: imageData!)
-                                            self.pageImages[foodPicture.objectID] = foodItemImage!
+                                            self.pageImages.append(foodItemImage!)
                                         } else {
                                             print("Error: \(error!) \(error!.userInfo)")
                                         }
                                         
                                         NSOperationQueue.mainQueue().addOperationWithBlock() {
                                             // when done, update your UI for the Scroll View
-                                            if self.pageImages.count == self.pages.count{
+                                            if self.pageImages.count == self.pictureCount{
                                                 self.AddImageViews()
                                             }
                                         }
@@ -169,12 +171,12 @@ func LoadImageViews(){
     // Create SubView for Scrollview of ImageViews and add them to ScrollView
     func AddImageViews(){
     
-        let pageCount = pages.count
+        let pageCount = self.pictureCount
         
         for var index = 0; index < pageCount; ++index {
             
             let ImageView = UIImageView(frame: CGRectMake(self.scrollView.frame.width*CGFloat(index),0, self.scrollView.frame.width, self.scrollView.frame.height))
-            ImageView.image  = self.pageImages[pages[index].objectID] ;
+            ImageView.image  = self.pageImages[index]
             ImageView.contentMode = .ScaleAspectFit
             
             self.scrollView.addSubview(ImageView)
@@ -194,7 +196,7 @@ func LoadImageViews(){
         
         
         //2.    create a new PFQuery
-        let query:PFQuery = PFQuery(className: "MenuItem")
+        let query:PFQuery = PFQuery(className: "Menu")
         query.whereKey("objectId", equalTo:targetMenu.objectID)
         
         
@@ -207,8 +209,9 @@ func LoadImageViews(){
                     //  loop through the objects array
                     //  Retrieve the values from the PFObject
                     for foodPicture in objects!{
-                        self.itemList = ((foodPicture as PFObject)["items"] as? [String])!
+                        self.itemList = ((foodPicture as PFObject)["items"])! as! NSMutableArray
                     }
+                    
                     //4.    When Downloading is Finished (Join queue)
                     NSOperationQueue.mainQueue().addOperationWithBlock() {
                         self.itemsTable.reloadData()
@@ -236,8 +239,31 @@ extension FoodScrollViewController2: UITableViewDataSource {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("tableCell")! as UITableViewCell
         cell.backgroundColor = UIColor.clearColor()
         
-        cell.textLabel?.text = itemList[indexPath.row]
+
+        cell.textLabel?.text = (self.itemList[indexPath.row]["itemName"] as! String) + "  " + "(" + "\(self.itemList[indexPath.row]["servings"] as! Int)" + " servings)"
         
         return cell
     }
+    
+
 }
+
+
+
+extension FoodScrollViewController2: UITableViewDelegate {
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let itemName = self.itemList[indexPath.row]["itemName"] as! String
+        let itemDescription = self.itemList[indexPath.row]["itemDescription"] as! String
+        
+        
+        let alert = UIAlertView(title: itemName, message: itemDescription, delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+        
+    }
+
+}
+
+
+

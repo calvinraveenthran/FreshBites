@@ -49,7 +49,7 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
         
         if (username?.utf16.count < 4 || password?.utf16.count < 5){
             
-        let alert = UIAlertView(title: "Invalid", message: "Username must be greater than 4 characters & Password must be greater than 5 characters", delegate: self, cancelButtonTitle: "OK", otherButtonTitles:"")
+        let alert = UIAlertView(title: "Invalid", message: "Username must be greater than 4 characters & Password must be greater than 5 characters", delegate: self, cancelButtonTitle: "OK")
             
             alert.show()
         } else {

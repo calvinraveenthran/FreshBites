@@ -55,6 +55,7 @@ class ConversationsTableViewController:  UITableViewController,CatererListTableV
             
             let messageViewController = segue.destinationViewController as! MessageViewController
             messageViewController.conversationId = target.conversationId
+            messageViewController.caterer = target.catererName
         } else if segue.identifier == "AddCaterer" {
             let messageViewController = segue.destinationViewController as! CatererListTableViewController
             messageViewController.delegate = self
@@ -87,9 +88,9 @@ class ConversationsTableViewController:  UITableViewController,CatererListTableV
                         let cId:String? = conversationProperty.objectId
                         let message:Bool? = (conversationProperty as PFObject)["newMessage"] as? Bool
                         
-                        let loadedMenuItem = Conversations(catererName: caterer!,  conversationId: cId!, newMessage: message!)
+                        let loadedCaterer = Conversations(catererName: caterer!,  conversationId: cId!, newMessage: message!)
                         self.catererNames.append(caterer!)
-                        self.conversationItems.append(loadedMenuItem)
+                        self.conversationItems.append(loadedCaterer)
                     }
                     
                     //4.    When Downloading is Finished (Join queue)

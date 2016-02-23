@@ -62,7 +62,7 @@ class OrderHistoryTableViewController:  UITableViewController {
         //2.    create a new PFQuery
         let query:PFQuery = PFQuery(className: "Orders")
          query.orderByAscending("updatedAt")
-        query.whereKey("customerName", equalTo:(PFUser.currentUser()?.username)!)
+        query.whereKey("customer", equalTo:(PFUser.currentUser()?.username)!)
         
         
         //3.    Get conversations from PARSE in the background (Fork queue)

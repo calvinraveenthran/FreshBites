@@ -40,12 +40,13 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate {
         for foodOrder in UserSessionManager.userSharedManager.checkoutArray {
             let orderSend = PFObject(className:"Orders")
             
-            orderSend["customerName"] = PFUser.currentUser()?.username
+            orderSend["customer"] = PFUser.currentUser()?.username
             orderSend["foodName"] = foodOrder.name
-            orderSend["foodId"] = foodOrder.objectID
+            orderSend["menuId"] = foodOrder.objectID
             orderSend["quantity"] = foodOrder.quantity
-            orderSend["comments"] = foodOrder.comments
+            orderSend["details"] = foodOrder.comments
             orderSend["price"] = foodOrder.price
+            orderSend["caterer"] = foodOrder.owner
             
             orderSend.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
