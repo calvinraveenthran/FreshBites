@@ -107,6 +107,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate{
         reviewSend["numberOfStars"] = currentFeedbackRating
         
         reviewSend["menuItemObjectID"] = targetMenu.objectID
+        reviewSend["catererId"] = targetMenu.owner
         
         
         //GET IN
