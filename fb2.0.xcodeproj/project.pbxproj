@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1FF1701C78273200BB4D91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FF16F1C78273200BB4D91 /* ProfileViewController.swift */; };
+		0F2F23D51C8EB2E3003146C8 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2F23CD1C8EB2E3003146C8 /* libPayPalMobile.a */; };
 		0F58759D1C31DADF0028F294 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F58759C1C31DADF0028F294 /* CoreData.framework */; };
 		0F59770F1C76A7F60026F5E5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59770E1C76A7F60026F5E5 /* MessageViewController.swift */; };
 		0F5C29261C30D1FD005F8CD5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C29251C30D1FD005F8CD5 /* MenuItem.swift */; };
@@ -88,11 +89,6 @@
 		0F67D48B1C531D72008C2427 /* photos-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67D48A1C531D72008C2427 /* photos-simple-7.png */; };
 		0F67D48D1C531DAE008C2427 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67D48C1C531DAE008C2427 /* info.png */; };
 		0F67D48F1C532B84008C2427 /* OrderItemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67D48E1C532B84008C2427 /* OrderItemTabBarController.swift */; };
-		0F67F5BC1C385E6D00026142 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67F5B71C385E6D00026142 /* photo1.png */; };
-		0F67F5BD1C385E6D00026142 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67F5B81C385E6D00026142 /* photo2.png */; };
-		0F67F5BE1C385E6D00026142 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67F5B91C385E6D00026142 /* photo3.png */; };
-		0F67F5BF1C385E6D00026142 /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67F5BA1C385E6D00026142 /* photo4.png */; };
-		0F67F5C01C385E6D00026142 /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67F5BB1C385E6D00026142 /* photo5.png */; };
 		0F67F5C21C389A1100026142 /* FoodScrollViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67F5C11C389A1100026142 /* FoodScrollViewController2.swift */; };
 		0F765DA51C54975500C4D2BF /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F765DA41C54975500C4D2BF /* CheckoutTableViewCell.swift */; };
 		0F7DA4351BFB04B70065845C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DA4341BFB04B70065845C /* libz.tbd */; };
@@ -120,6 +116,14 @@
 		0F88E57C1C76AB4B00848D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F88E57A1C76AB4B00848D69 /* Main.storyboard */; };
 		0F88E57E1C76ECDD00848D69 /* CatererListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88E57D1C76ECDD00848D69 /* CatererListTableViewController.swift */; };
 		0F88E5801C76FD2400848D69 /* CaterersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88E57F1C76FD2400848D69 /* CaterersTableViewCell.swift */; };
+		0F89730D1C8EB4DD0051C8E9 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F89730A1C8EB4DD0051C8E9 /* libCardIO.a */; };
+		0F89730E1C8EB4DD0051C8E9 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F89730B1C8EB4DD0051C8E9 /* libopencv_core.a */; };
+		0F89730F1C8EB4DD0051C8E9 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F89730C1C8EB4DD0051C8E9 /* libopencv_imgproc.a */; };
+		0F8973111C8EB73A0051C8E9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8973101C8EB73A0051C8E9 /* Accelerate.framework */; };
+		0F8973131C8EB7520051C8E9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8973121C8EB7520051C8E9 /* AVFoundation.framework */; };
+		0F8973151C8EB7640051C8E9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8973141C8EB7640051C8E9 /* CoreMedia.framework */; };
+		0F8973171C8EB7920051C8E9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8973161C8EB7920051C8E9 /* MessageUI.framework */; };
+		0F8973191C8EB7B40051C8E9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8973181C8EB7B40051C8E9 /* SafariServices.framework */; };
 		0F90FC6C1C79180000EE6C7E /* OrderHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90FC6B1C79180000EE6C7E /* OrderHistoryTableViewController.swift */; };
 		0F90FC6E1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90FC6D1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift */; };
 		0FA2A4121C35A8D400A2E2E7 /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A4111C35A8D400A2E2E7 /* MenuNavigationController.swift */; };
@@ -160,6 +164,14 @@
 
 /* Begin PBXFileReference section */
 		0F1FF16F1C78273200BB4D91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0F2F23CD1C8EB2E3003146C8 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		0F2F23CE1C8EB2E3003146C8 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		0F2F23CF1C8EB2E3003146C8 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		0F2F23D01C8EB2E3003146C8 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		0F2F23D11C8EB2E3003146C8 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		0F2F23D21C8EB2E3003146C8 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		0F2F23D31C8EB2E3003146C8 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		0F2F23D41C8EB2E3003146C8 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
 		0F58759C1C31DADF0028F294 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0F59770E1C76A7F60026F5E5 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		0F5C29251C30D1FD005F8CD5 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -233,6 +245,7 @@
 		0F5C29721C30DD93005F8CD5 /* tick_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick_box.png; sourceTree = "<group>"; };
 		0F5C29731C30DD93005F8CD5 /* tick_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tick_box@2x.png"; sourceTree = "<group>"; };
 		0F5C29741C30DD93005F8CD5 /* tick_box@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tick_box@3x.png"; sourceTree = "<group>"; };
+		0F629EF01C8EC150009686FC /* ZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZAppDelegate.h; sourceTree = "<group>"; };
 		0F639AEF1C53EF5E00B001BE /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		0F639AF11C53F6A800B001BE /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
 		0F639AF41C540A6A00B001BE /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
@@ -240,11 +253,6 @@
 		0F67D48A1C531D72008C2427 /* photos-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos-simple-7.png"; sourceTree = "<group>"; };
 		0F67D48C1C531DAE008C2427 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		0F67D48E1C532B84008C2427 /* OrderItemTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItemTabBarController.swift; sourceTree = "<group>"; };
-		0F67F5B71C385E6D00026142 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
-		0F67F5B81C385E6D00026142 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
-		0F67F5B91C385E6D00026142 /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
-		0F67F5BA1C385E6D00026142 /* photo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo4.png; sourceTree = "<group>"; };
-		0F67F5BB1C385E6D00026142 /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo5.png; sourceTree = "<group>"; };
 		0F67F5C11C389A1100026142 /* FoodScrollViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodScrollViewController2.swift; sourceTree = "<group>"; };
 		0F765DA41C54975500C4D2BF /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
 		0F7DA4341BFB04B70065845C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -272,6 +280,22 @@
 		0F88E57B1C76AB4B00848D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F88E57D1C76ECDD00848D69 /* CatererListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatererListTableViewController.swift; sourceTree = "<group>"; };
 		0F88E57F1C76FD2400848D69 /* CaterersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaterersTableViewCell.swift; sourceTree = "<group>"; };
+		0F8973021C8EB4DD0051C8E9 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		0F8973031C8EB4DD0051C8E9 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		0F8973041C8EB4DD0051C8E9 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		0F8973051C8EB4DD0051C8E9 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		0F8973061C8EB4DD0051C8E9 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		0F8973071C8EB4DD0051C8E9 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		0F8973081C8EB4DD0051C8E9 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		0F8973091C8EB4DD0051C8E9 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		0F89730A1C8EB4DD0051C8E9 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		0F89730B1C8EB4DD0051C8E9 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		0F89730C1C8EB4DD0051C8E9 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		0F8973101C8EB73A0051C8E9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0F8973121C8EB7520051C8E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0F8973141C8EB7640051C8E9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0F8973161C8EB7920051C8E9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0F8973181C8EB7B40051C8E9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		0F90FC6B1C79180000EE6C7E /* OrderHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryTableViewController.swift; sourceTree = "<group>"; };
 		0F90FC6D1C79182F00EE6C7E /* OrderHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		0FA2A4111C35A8D400A2E2E7 /* MenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
@@ -307,6 +331,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8973191C8EB7B40051C8E9 /* SafariServices.framework in Frameworks */,
+				0F83AA5D1BFB0377005F9891 /* MobileCoreServices.framework in Frameworks */,
+				0F8973171C8EB7920051C8E9 /* MessageUI.framework in Frameworks */,
+				0F8973151C8EB7640051C8E9 /* CoreMedia.framework in Frameworks */,
+				0F8973131C8EB7520051C8E9 /* AVFoundation.framework in Frameworks */,
+				0F83AA551BFB0352005F9891 /* AudioToolbox.framework in Frameworks */,
+				0F8973111C8EB73A0051C8E9 /* Accelerate.framework in Frameworks */,
+				0F89730D1C8EB4DD0051C8E9 /* libCardIO.a in Frameworks */,
 				0F58759D1C31DADF0028F294 /* CoreData.framework in Frameworks */,
 				0F7DA43B1BFB05290065845C /* Social.framework in Frameworks */,
 				0F7DA4391BFB05250065845C /* Accounts.framework in Frameworks */,
@@ -316,14 +348,15 @@
 				0F83AA631BFB0390005F9891 /* SystemConfiguration.framework in Frameworks */,
 				0F83AA611BFB0384005F9891 /* Security.framework in Frameworks */,
 				0F83AA5F1BFB037E005F9891 /* QuartzCore.framework in Frameworks */,
-				0F83AA5D1BFB0377005F9891 /* MobileCoreServices.framework in Frameworks */,
 				0F83AA5B1BFB0361005F9891 /* CoreLocation.framework in Frameworks */,
 				0F83AA591BFB035B005F9891 /* CoreGraphics.framework in Frameworks */,
+				0F89730E1C8EB4DD0051C8E9 /* libopencv_core.a in Frameworks */,
+				0F2F23D51C8EB2E3003146C8 /* libPayPalMobile.a in Frameworks */,
 				0F83AA571BFB0356005F9891 /* CFNetwork.framework in Frameworks */,
-				0F83AA551BFB0352005F9891 /* AudioToolbox.framework in Frameworks */,
 				0F83AA4F1BFB0338005F9891 /* Bolts.framework in Frameworks */,
 				0F83AA511BFB033D005F9891 /* Parse.framework in Frameworks */,
 				0F83AA531BFB033F005F9891 /* ParseUI.framework in Frameworks */,
+				0F89730F1C8EB4DD0051C8E9 /* libopencv_imgproc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +377,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2F23CC1C8EB2E3003146C8 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				0F2F23CD1C8EB2E3003146C8 /* libPayPalMobile.a */,
+				0F2F23CE1C8EB2E3003146C8 /* PayPalConfiguration.h */,
+				0F2F23CF1C8EB2E3003146C8 /* PayPalFuturePaymentViewController.h */,
+				0F2F23D01C8EB2E3003146C8 /* PayPalMobile.h */,
+				0F2F23D11C8EB2E3003146C8 /* PayPalOAuthScopes.h */,
+				0F2F23D21C8EB2E3003146C8 /* PayPalPayment.h */,
+				0F2F23D31C8EB2E3003146C8 /* PayPalPaymentViewController.h */,
+				0F2F23D41C8EB2E3003146C8 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
 		0F5C29271C30D421005F8CD5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,11 +424,6 @@
 				0FA6F9871C72FB0D0042FB6F /* unnamed.png */,
 				0F67D4881C531D63008C2427 /* fork-knife.png */,
 				0F67D48A1C531D72008C2427 /* photos-simple-7.png */,
-				0F67F5B71C385E6D00026142 /* photo1.png */,
-				0F67F5B81C385E6D00026142 /* photo2.png */,
-				0F67F5B91C385E6D00026142 /* photo3.png */,
-				0F67F5BA1C385E6D00026142 /* photo4.png */,
-				0F67F5BB1C385E6D00026142 /* photo5.png */,
 				0F5C29301C30DD93005F8CD5 /* arrow_left.png */,
 				0F5C29311C30DD93005F8CD5 /* arrow_left@2x.png */,
 				0F5C29321C30DD93005F8CD5 /* arrow_left@3x.png */,
@@ -455,6 +498,24 @@
 				0F5C29741C30DD93005F8CD5 /* tick_box@3x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		0F8973011C8EB4DD0051C8E9 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				0F8973021C8EB4DD0051C8E9 /* CardIO.h */,
+				0F8973031C8EB4DD0051C8E9 /* CardIOCreditCardInfo.h */,
+				0F8973041C8EB4DD0051C8E9 /* CardIODetectionMode.h */,
+				0F8973051C8EB4DD0051C8E9 /* CardIOPaymentViewController.h */,
+				0F8973061C8EB4DD0051C8E9 /* CardIOPaymentViewControllerDelegate.h */,
+				0F8973071C8EB4DD0051C8E9 /* CardIOUtilities.h */,
+				0F8973081C8EB4DD0051C8E9 /* CardIOView.h */,
+				0F8973091C8EB4DD0051C8E9 /* CardIOViewDelegate.h */,
+				0F89730A1C8EB4DD0051C8E9 /* libCardIO.a */,
+				0F89730B1C8EB4DD0051C8E9 /* libopencv_core.a */,
+				0F89730C1C8EB4DD0051C8E9 /* libopencv_imgproc.a */,
+			);
+			path = CardIO;
 			sourceTree = "<group>";
 		};
 		0FC143061BFAE2760033806F = {
@@ -563,6 +624,11 @@
 		0FDF94791C2FBEB0004A2034 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F8973181C8EB7B40051C8E9 /* SafariServices.framework */,
+				0F8973161C8EB7920051C8E9 /* MessageUI.framework */,
+				0F8973141C8EB7640051C8E9 /* CoreMedia.framework */,
+				0F8973121C8EB7520051C8E9 /* AVFoundation.framework */,
+				0F8973101C8EB73A0051C8E9 /* Accelerate.framework */,
 				0F58759C1C31DADF0028F294 /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -585,6 +651,8 @@
 		0FE299251C2B2E5100F88E9A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0F8973011C8EB4DD0051C8E9 /* CardIO */,
+				0F2F23CC1C8EB2E3003146C8 /* PayPalMobile */,
 				0FE299681C2F862200F88E9A /* 3rdParty */,
 			);
 			name = SupportingFiles;
@@ -599,6 +667,7 @@
 				0FE2996B1C2F86D200F88E9A /* EmptySegue.m */,
 				0FE299271C2B2E6D00F88E9A /* SWRevealViewController.h */,
 				0FE299261C2B2E6C00F88E9A /* fb2.0-Bridging-Header.h */,
+				0F629EF01C8EC150009686FC /* ZZAppDelegate.h */,
 			);
 			name = 3rdParty;
 			sourceTree = "<group>";
@@ -708,7 +777,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F67F5BF1C385E6D00026142 /* photo4.png in Resources */,
 				0F5C29901C30DD93005F8CD5 /* logo_menu.png in Resources */,
 				0F5C298E1C30DD93005F8CD5 /* location_marker@2x.png in Resources */,
 				0F5C298D1C30DD93005F8CD5 /* location_marker.png in Resources */,
@@ -734,17 +802,14 @@
 				0F5C29B81C30DD93005F8CD5 /* tick_box@2x.png in Resources */,
 				0F5C298B1C30DD93005F8CD5 /* location@2x.png in Resources */,
 				0F5C299B1C30DD93005F8CD5 /* our_menu@3x.png in Resources */,
-				0F67F5BD1C385E6D00026142 /* photo2.png in Resources */,
 				0F5C297A1C30DD93005F8CD5 /* arrow_right@3x.png in Resources */,
 				0F5C297F1C30DD93005F8CD5 /* chosen_menu_item@2x.png in Resources */,
-				0F67F5BC1C385E6D00026142 /* photo1.png in Resources */,
 				0F5C299C1C30DD93005F8CD5 /* photo_item1.png in Resources */,
 				0F5C29B11C30DD93005F8CD5 /* star_chosen.png in Resources */,
 				0F5C29AC1C30DD93005F8CD5 /* restoraunt_photo@2x.png in Resources */,
 				0F5C29B91C30DD93005F8CD5 /* tick_box@3x.png in Resources */,
 				0F5C29B41C30DD93005F8CD5 /* star_unchosen.png in Resources */,
 				0F5C29A61C30DD93005F8CD5 /* photo_item4@2x.png in Resources */,
-				0F67F5BE1C385E6D00026142 /* photo3.png in Resources */,
 				0F67D4891C531D63008C2427 /* fork-knife.png in Resources */,
 				0F5C298F1C30DD93005F8CD5 /* location_marker@3x.png in Resources */,
 				0F5C29A01C30DD93005F8CD5 /* photo_item2@2x.png in Resources */,
@@ -770,7 +835,6 @@
 				0F5C29921C30DD93005F8CD5 /* logo_menu@3x.png in Resources */,
 				0F5C29981C30DD93005F8CD5 /* menu_button@3x.png in Resources */,
 				0F5C29791C30DD93005F8CD5 /* arrow_right@2x.png in Resources */,
-				0F67F5C01C385E6D00026142 /* photo5.png in Resources */,
 				0F88E57C1C76AB4B00848D69 /* Main.storyboard in Resources */,
 				0F5C299A1C30DD93005F8CD5 /* our_menu@2x.png in Resources */,
 				0F5C297D1C30DD93005F8CD5 /* background@3x.png in Resources */,
@@ -996,6 +1060,15 @@
 				);
 				INFOPLIST_FILE = fb2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fb2.0/PayPalMobile",
+					"$(PROJECT_DIR)/fb2.0/CardIO",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calvinjr.fb2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1018,6 +1091,15 @@
 				);
 				INFOPLIST_FILE = fb2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fb2.0/PayPalMobile",
+					"$(PROJECT_DIR)/fb2.0/CardIO",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calvinjr.fb2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

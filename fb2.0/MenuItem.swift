@@ -47,10 +47,10 @@ class OrderItem: NSObject{
     var objectID: String!
     var quantity: Int!
     var comments: String!
-    var price: Int!
+    var price: NSDecimalNumber!
     var owner: String!
     
-    init(name: String, objectID: String, quantity: Int, comments: String, price: Int, owner: String) {
+    init(name: String, objectID: String, quantity: Int, comments: String, price: NSDecimalNumber, owner: String) {
 
         self.name = name
         self.objectID = objectID

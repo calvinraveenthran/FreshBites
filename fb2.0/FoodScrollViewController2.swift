@@ -47,7 +47,7 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
                 let name:String = self.targetMenu.name
                 let objectID:String = self.targetMenu.objectID
                 let quantity:Int = self.itemCount
-                let price:Int = Int(self.targetMenu.price)!
+                let price:NSDecimalNumber = NSDecimalNumber(string: self.targetMenu.price)
                 let comments:String = (self.commentsTextField.text)!
                 let owner:String = self.targetMenu.owner
             

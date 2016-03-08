@@ -118,12 +118,22 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
                     //  Retrieve the values from the PFObject
                     for foodItem in objects!{
 
-                        let foodItemName:String? = (foodItem as PFObject)["name"] as? String
-                        let foodItemDescription:String? = (foodItem as PFObject)["description"] as? String
-                        let foodItemPrice:String? = (foodItem as PFObject)["price"] as? String
-                        let PFFImage:PFFile? = (foodItem as PFObject)["menuCover"] as? PFFile
-                        let foodItemObjectId:String? = foodItem.objectId
-                        let foodItemOwner:String? = (foodItem as PFObject)["owner"] as? String
+                        var foodItemName:String? = (foodItem as PFObject)["name"] as? String
+                            if foodItemName == nil{ foodItemName = "Default Name"}
+                        
+                        var foodItemDescription:String? = (foodItem as PFObject)["description"] as? String
+                            if foodItemDescription == nil{ foodItemDescription = "Default Description"}
+                        
+                        var foodItemPrice:String? = (foodItem as PFObject)["price"] as? String
+                            if foodItemPrice == nil{ foodItemPrice = "$$"}
+                        
+                        var PFFImage:PFFile? = (foodItem as PFObject)["menuCover"] as? PFFile
+                        
+                        var foodItemObjectId:String? = foodItem.objectId
+                            if foodItemObjectId == nil{ foodItemPrice = ""}
+                        
+                        var foodItemOwner:String? = (foodItem as PFObject)["owner"] as? String
+                            if foodItemOwner == nil{ foodItemOwner = "Default Owner"}
                         
                         //Append to Menu List
                         let loadedMenuItem = MenuItem(name:foodItemName!, menuItemDescription:foodItemDescription!,pffImage:PFFImage!,price:foodItemPrice!, objectID:foodItemObjectId!, owner: foodItemOwner!)
