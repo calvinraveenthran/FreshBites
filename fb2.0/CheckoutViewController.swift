@@ -60,7 +60,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
                         (success: Bool, error: NSError?) -> Void in
                             if (success) {
                                     // The object has been saved.
-                                    let item1 = PayPalItem(name: foodOrder.objectID, withQuantity: UInt(foodOrder.quantity), withPrice:foodOrder.price, withCurrency: "CAD", withSku: " ")
+                                    let item1 = PayPalItem(name: foodOrder.objectID, withQuantity: UInt(foodOrder.quantity), withPrice:foodOrder.price, withCurrency: "CAD", withSku:"0000")
                                     Items.append(item1)
                             } else {
                                     // There was a problem, check error.description
@@ -110,13 +110,16 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
         
     }
     
-    var environment:String = PayPalEnvironmentNoNetwork {
+    var environment:String = PayPalEnvironmentSandbox
+        
+        
+    /*PayPalEnvironmentNoNetwork {
         willSet(newEnvironment) {
             if (newEnvironment != environment) {
                 PayPalMobile.preconnectWithEnvironment(newEnvironment)
             }
         }
-    }
+    }*/
     
     var acceptCreditCards: Bool = true {
         didSet {
@@ -138,12 +141,12 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
         
         payPalConfig.acceptCreditCards = acceptCreditCards;
         payPalConfig.merchantName = "Calvin Raveenthran Inc."
-        payPalConfig.merchantPrivacyPolicyURL = NSURL(string: "https://www.calvinraveenthran.com/privacy.html")
-        payPalConfig.merchantUserAgreementURL = NSURL(string: "https://www.calvinraveenthran.com/useragreement.html")
+        payPalConfig.merchantPrivacyPolicyURL = NSURL(string: "https://www.paypal.com/webapps/mpp/ua/privacy-full")
+        payPalConfig.merchantUserAgreementURL = NSURL(string: "https://www.paypal.com/webapps/mpp/ua/useragreement-full")
         payPalConfig.languageOrLocale = NSLocale.preferredLanguages()[0]
         payPalConfig.payPalShippingAddressOption = .PayPal;
         
-        PayPalMobile.preconnectWithEnvironment(environment)
+        PayPalMobile.preconnectWithEnvironment(self.environment)
         
     }
     

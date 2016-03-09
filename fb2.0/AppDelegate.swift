@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions);
         
-        PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentProduction: "calvinraveenthran@mail.utoronto.ca",PayPalEnvironmentSandbox: "calvinraveenthran@mail.utoronto.ca"])
         
+        PayPalMobile.initializeWithClientIdsForEnvironments([PayPalEnvironmentProduction: "freshbites347@gmail.com",PayPalEnvironmentSandbox: "ATG758G2etPnkIpkvqhxkYnDYG7XDLIffJbjirscbLJCAfmpbPhQKkrfeV1rbaqoiPlT-dn9uqPD-Tg_"])
         return true
     }
 
