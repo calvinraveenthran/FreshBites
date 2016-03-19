@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "41B5D6E39E92B1CA912BDB3F638EC92112EC2C2C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "41B5D6E39E92B1CA912BDB3F638EC92112EC2C2C" : 0,
+    "0DC6EEB3A037CBDBF38D22B1F7F08F7BD52E5475" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2C2A2042-9A5F-4EB4-8BD4-1D55142AF626",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "41B5D6E39E92B1CA912BDB3F638EC92112EC2C2C" : "fb2.0\/",
+    "0DC6EEB3A037CBDBF38D22B1F7F08F7BD52E5475" : "fb2.0\/fb2.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fb2.0",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fb2.0.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/calvinraveenthran\/fb2.0.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0DC6EEB3A037CBDBF38D22B1F7F08F7BD52E5475"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nayeemzen\/freshbites-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "41B5D6E39E92B1CA912BDB3F638EC92112EC2C2C"
+    }
+  ]
+}

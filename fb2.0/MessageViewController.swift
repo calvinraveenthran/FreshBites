@@ -21,6 +21,7 @@ class MessageViewController:  UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
     
+    @IBOutlet weak var textView: UIView!
     @IBAction func sendMessageButton(sender: AnyObject) {
     
         let newMessage = Message(sender: "", conversationId: "", message: "", receiver: "")
@@ -65,11 +66,40 @@ class MessageViewController:  UIViewController, UITextFieldDelegate {
         tableView.dataSource = self
         self.LoadMessages()
         self.messageTextField.delegate = self
+        
+        
+        // Keyboard stuff.
+        let center: NSNotificationCenter = NSNotificationCenter.defaultCenter()
+        center.addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        center.addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    
+    
+        
+        func keyboardWillShow(notification: NSNotification) {
+            
+            if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+            
+        }
+        
+        func keyboardWillHide(notification: NSNotification) {
+            if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
     
     func LoadMessages(){

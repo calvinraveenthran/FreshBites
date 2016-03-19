@@ -22,6 +22,7 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
         
         self.usernameField.delegate = self;
         self.passwordField.delegate = self;
+        
     
     }
     
@@ -82,6 +83,7 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
     @IBAction func SignUp(sender: AnyObject) {
         self.performSegueWithIdentifier("signUpSegue", sender: nil)
     }
+    
 
 }
 

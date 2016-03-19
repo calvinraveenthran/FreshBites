@@ -1,0 +1,24 @@
+{
+    "name": "Chicken Briyani",
+    "ingredients": "Rice, Indian Spices, Chicken",
+    "price": "$55",
+    "image": "ChickenBiryani.jpg"
+},
+{
+    "name": "Mutton Briyani",
+    "ingredients": "Rice, Indian Spices, Mutton",
+    "price": "$65",
+    "image": "MuttonBiryani.jpg"
+},
+{
+    "name": "Beef Briyani",
+    "ingredients": "Rice, Indian Spices, Beef",
+    "price": "$55",
+    "image": "BeefBiryani.jpg"
+},
+{
+    "name": "Naan",
+    "ingredients": "Dough",
+    "price": "$20",
+    "image": "Naan.jpg"
+}
