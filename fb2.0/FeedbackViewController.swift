@@ -69,14 +69,16 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate{
     func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-            self.view.frame.origin.y -= keyboardSize.height
+            if self.view.frame.origin.y == 0{
+            self.view.frame.origin.y -= (keyboardSize.height - 53)
+            }
         }
         
     }
     
     func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
-            self.view.frame.origin.y += keyboardSize.height
+            self.view.frame.origin.y += (keyboardSize.height - 53)
         }
     }
     
@@ -85,10 +87,10 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate{
         return false
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    /*override func viewWillDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
-    }
+    }*/
     
     // MARK: - Private Methods
     private func changeRatingFor(newRating: Int) {

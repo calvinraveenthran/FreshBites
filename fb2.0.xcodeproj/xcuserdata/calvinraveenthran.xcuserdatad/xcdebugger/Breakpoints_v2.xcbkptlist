@@ -232,11 +232,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -405,11 +405,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -421,11 +421,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -437,11 +437,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480532736.903336"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -453,11 +453,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "didReceiveMemoryWarning()"
             landmarkType = "5">
          </BreakpointContent>
@@ -469,11 +469,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
             <Locations>
@@ -517,11 +517,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -533,11 +533,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1136,11 +1136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1152,11 +1152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1168,11 +1168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1184,11 +1184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1200,23 +1200,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "prepareForSegue(_:sender:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -1232,11 +1216,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/MenuTableViewController.swift"
+            timestampString = "480534702.864413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "appendToCheckoutMaster(_:)"
             landmarkType = "5">
             <Locations>
@@ -1328,11 +1328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "appendToCheckoutMaster(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1360,11 +1360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "onThreeStar(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1376,11 +1376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "onOneStar(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1392,11 +1392,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "sendFeedback(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1408,11 +1408,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "sendFeedback(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1424,11 +1424,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1440,75 +1440,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "sendFeedback(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "fb2.0/FeedbackViewController.swift"
-            timestampString = "480107635.790601"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "227"
             endingLineNumber = "227"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/FeedbackViewController.swift"
+            timestampString = "480537254.809301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "sendFeedback(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/FeedbackViewController.swift"
+            timestampString = "480537254.809301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/FeedbackViewController.swift"
+            timestampString = "480537254.809301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/FeedbackViewController.swift"
+            timestampString = "480537254.809301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1628,11 +1628,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1660,11 +1660,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1676,11 +1676,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1692,11 +1692,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
             <Locations>
@@ -1756,7 +1756,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FoodScrollViewController2.swift"
-            timestampString = "480528004.962221"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "259"
@@ -1772,7 +1772,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FoodScrollViewController2.swift"
-            timestampString = "480528004.962221"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "263"
@@ -2087,7 +2087,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FoodScrollViewController2.swift"
-            timestampString = "480528004.962221"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "260"
@@ -2119,22 +2119,7 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "479641218.418207"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(style : __C.UITableViewStyle) -&gt; fb2_0.ConversationsTableViewController"
-                  moduleName = "fb2.0"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "479641218.418409"
+                  timestampString = "480537882.328023"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -2145,16 +2130,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; fb2_0.ConversationsTableViewController"
+                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(style : __C.UITableViewStyle) -&gt; fb2_0.ConversationsTableViewController"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "479641218.418599"
+                  timestampString = "480537882.328181"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "60">
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; fb2_0.ConversationsTableViewController"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
+                  timestampString = "480537882.328337"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "68">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2164,12 +2164,12 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "479641218.418806"
+                  timestampString = "480537882.328491"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2741,11 +2741,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2757,23 +2757,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -2789,11 +2773,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/MenuTableViewController.swift"
+            timestampString = "480534702.864413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "MenuTableViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -2805,11 +2805,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2821,11 +2821,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/MenuTableViewController.swift"
-            timestampString = "480533102.06094"
+            timestampString = "480534702.864413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "retrieveMenu()"
             landmarkType = "5">
          </BreakpointContent>
@@ -2853,7 +2853,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FoodScrollViewController2.swift"
-            timestampString = "480528004.962221"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "266"
@@ -2869,7 +2869,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FoodScrollViewController2.swift"
-            timestampString = "480528004.962221"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "268"
@@ -2885,7 +2885,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "fb2.0/FoodScrollViewController2.swift"
-            timestampString = "480528004.962221"
+            timestampString = "480537254.809301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "266"
@@ -3093,12 +3093,12 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/CheckoutViewController.swift"
-                  timestampString = "479641218.423979"
+                  timestampString = "480537882.333846"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
                   endingLineNumber = "70"
-                  offsetFromSymbolStart = "969">
+                  offsetFromSymbolStart = "812">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3108,12 +3108,12 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/CheckoutViewController.swift"
-                  timestampString = "479641218.424126"
+                  timestampString = "480537882.334002"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "71"
                   endingLineNumber = "71"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3228,6 +3228,99 @@
             endingLineNumber = "183"
             landmarkName = "updatePrice()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fb2.0/FeedbackTableViewCell.swift"
+            timestampString = "480537676.678874"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "FeedbackTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.FeedbackTableViewCell.oneStarImgView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
+                  timestampString = "480537882.339277"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.FeedbackTableViewCell.oneStarImgView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
+                  timestampString = "480537882.339429"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.FeedbackTableViewCell.oneStarImgView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
+                  timestampString = "480537882.339577"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.FeedbackTableViewCell.init (fb2_0.FeedbackTableViewCell.Type)(style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; fb2_0.FeedbackTableViewCell"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
+                  timestampString = "480537882.33972"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.FeedbackTableViewCell.init (fb2_0.FeedbackTableViewCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;fb2_0.FeedbackTableViewCell&gt;"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
+                  timestampString = "480537882.339866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -43,7 +43,7 @@ class OrderHistoryTableViewController:  UITableViewController {
         
         //1.    Update all the Non Image Dependent Values
         cell.foodNameLabel.text = item.name
-        cell.foodPriceLabel.text = "\(item.quantity*item.price)"
+        cell.foodPriceLabel.text = "$\(item.quantity*item.price)"
         cell.purchaseDateLabel.text = item.date
         
         cell.backgroundColor = UIColor.clearColor()
