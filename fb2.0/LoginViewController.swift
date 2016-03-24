@@ -23,6 +23,9 @@ class LoginViewController: UIViewController,PFLogInViewControllerDelegate, PFSig
         self.usernameField.delegate = self;
         self.passwordField.delegate = self;
         
+        self.usernameField.autocorrectionType = UITextAutocorrectionType.No;
+        self.passwordField.autocorrectionType = UITextAutocorrectionType.No;
+        
     
     }
     

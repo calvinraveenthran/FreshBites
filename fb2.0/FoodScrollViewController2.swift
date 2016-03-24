@@ -25,6 +25,7 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
         @IBOutlet weak var commentsTextField: UITextField!
         @IBOutlet weak var scrollView: UIScrollView!
         @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var chefName: UILabel!
     
         var delegate : FoodScrollViewController2Delegate! = nil
     
@@ -37,7 +38,8 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
         private var pictureCount: Int = 0
     
         //Variable of Controller Delegate (The Menu Item Selected in previous Table)
-        var targetMenu: MenuItem!    
+        var targetMenu: MenuItem!
+        var chef: String!
         var itemCount: Int = 0
     
     
@@ -97,7 +99,7 @@ override func viewDidLoad() {
         //self.itemDescriptionDescriptionTextView.text = targetMenu.menuItemDescription
     
         self.countLabel.text = "\(itemCount)"
-    
+        self.chefName.text = "Chef: " + self.chef
         self.commentsTextField.delegate = self;
     
     

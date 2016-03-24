@@ -27,7 +27,9 @@ class MessageViewController:  UIViewController, UITextFieldDelegate {
         let newMessage = Message(sender: "", conversationId: "", message: "", receiver: "")
         var messageSend = PFObject(className:"Messages")
         
-        if let content = self.messageTextField?.text {
+        let content = self.messageTextField?.text
+        
+        if content != "" {
             newMessage.message = content
             messageSend["content"] = newMessage.message
             

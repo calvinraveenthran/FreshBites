@@ -67,10 +67,14 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
                     //  loop through the objects array
                     //  Retrieve the values from the PFObject
                     for profileProperty in objects!{
-                        let address:String? = (profileProperty as PFObject)["address"] as? String
-                        let city:String? = (profileProperty as PFObject)["city"] as? String
-                        let postalCode:String? = (profileProperty as PFObject)["postalCode"] as? String
-                        let phone:String? = (profileProperty as PFObject)["phone"] as? String
+                        var address:String? = (profileProperty as PFObject)["address"] as? String
+                            if address == nil{ address = " "}
+                        var city:String? = (profileProperty as PFObject)["city"] as? String
+                            if city == nil{ city = " "}
+                        var postalCode:String? = (profileProperty as PFObject)["postalCode"] as? String
+                            if postalCode == nil{ postalCode = " "}
+                        var phone:String? = (profileProperty as PFObject)["phone"] as? String
+                            if phone == nil{ phone = " "}
                         
                         self.profileProperties.append(address!)
                         self.profileProperties.append(city!)
