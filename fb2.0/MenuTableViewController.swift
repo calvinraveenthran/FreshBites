@@ -34,7 +34,9 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
         menu.target = self.revealViewController()
         menu.action = Selector("revealToggle:")
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-
+        
+        //self.revealViewController().rearViewRevealWidth = 235
+        //self.revealViewController().rearViewRevealDisplacement = 0
         //3.    Retrieve Menu
         self.retrieveMenu()
         
