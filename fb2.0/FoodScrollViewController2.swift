@@ -264,8 +264,8 @@ extension FoodScrollViewController2: UITableViewDataSource {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("tableCell")! as UITableViewCell
         cell.backgroundColor = UIColor.clearColor()
         
-
-        cell.textLabel?.text = (self.itemList[indexPath.row]["itemName"] as! String) + "  " + "(" + "\(self.itemList[indexPath.row]["servings"] as! Int)" + " servings)"
+        let dict = self.itemList[indexPath.row] as! [String:AnyObject]
+        cell.textLabel?.text = (dict["itemName"] as! String) + "  " + "(" + "\(dict["servings"] as! Int)" + " servings)"
         
         return cell
     }
@@ -279,8 +279,10 @@ extension FoodScrollViewController2: UITableViewDelegate {
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let itemName = self.itemList[indexPath.row]["itemName"] as! String
-        let itemDescription = self.itemList[indexPath.row]["itemDescription"] as! String
+        
+        let dict = self.itemList[indexPath.row] as! [String:AnyObject]
+        let itemName = dict["itemName"] as! String
+        let itemDescription = dict["itemDescription"] as! String
         
         
         let alert = UIAlertView(title: itemName, message: itemDescription, delegate: self, cancelButtonTitle: "OK")

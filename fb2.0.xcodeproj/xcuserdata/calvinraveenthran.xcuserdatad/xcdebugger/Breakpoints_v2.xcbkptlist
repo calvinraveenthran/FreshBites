@@ -820,9 +820,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "BackViewController"
-            landmarkType = "3">
+            endingLineNumber = "38">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -836,9 +834,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            endingLineNumber = "44">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -852,9 +848,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            endingLineNumber = "22">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -868,9 +862,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            endingLineNumber = "26">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -884,9 +876,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            endingLineNumber = "43">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -900,9 +890,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            endingLineNumber = "49">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -916,9 +904,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            endingLineNumber = "25">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -932,9 +918,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            endingLineNumber = "50">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -948,9 +932,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            endingLineNumber = "48">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2119,57 +2101,57 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "480537882.328023"
+                  timestampString = "480821188.96969"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(style : __C.UITableViewStyle) -&gt; fb2_0.ConversationsTableViewController"
+                  symbolName = "fb2_0.ConversationsTableViewController.init (style : __C.UITableViewStyle) -&gt; fb2_0.ConversationsTableViewController"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "480537882.328181"
+                  timestampString = "480821188.969834"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "28">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; fb2_0.ConversationsTableViewController"
+                  symbolName = "fb2_0.ConversationsTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; fb2_0.ConversationsTableViewController"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "480537882.328337"
+                  timestampString = "480821188.969966"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "72">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.ConversationsTableViewController.init (fb2_0.ConversationsTableViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;fb2_0.ConversationsTableViewController&gt;"
+                  symbolName = "fb2_0.ConversationsTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;fb2_0.ConversationsTableViewController&gt;"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/ConversationsTableViewController.swift"
-                  timestampString = "480537882.328491"
+                  timestampString = "480821188.970088"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "28">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "31">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3089,31 +3071,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.CheckoutViewController.(proceedToCheckoutButton (fb2_0.CheckoutViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1)"
+                  symbolName = "fb2_0.CheckoutViewController.(proceedToCheckoutButton (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/CheckoutViewController.swift"
-                  timestampString = "480537882.333846"
+                  timestampString = "480821188.975447"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
                   endingLineNumber = "70"
-                  offsetFromSymbolStart = "812">
+                  offsetFromSymbolStart = "964">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.CheckoutViewController.(proceedToCheckoutButton (fb2_0.CheckoutViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  symbolName = "fb2_0.CheckoutViewController.(proceedToCheckoutButton (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1).(closure #1)"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/CheckoutViewController.swift"
-                  timestampString = "480537882.334002"
+                  timestampString = "480821188.975574"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3253,12 +3235,12 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
-                  timestampString = "480537882.339277"
+                  timestampString = "480821188.980959"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "27">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3268,57 +3250,42 @@
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
-                  timestampString = "480537882.339429"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.FeedbackTableViewCell.oneStarImgView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
-                  moduleName = "fb2.0"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
-                  timestampString = "480537882.339577"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.FeedbackTableViewCell.init (fb2_0.FeedbackTableViewCell.Type)(style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; fb2_0.FeedbackTableViewCell"
-                  moduleName = "fb2.0"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
-                  timestampString = "480537882.33972"
+                  timestampString = "480821188.981094"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
                   endingLineNumber = "20"
-                  offsetFromSymbolStart = "204">
+                  offsetFromSymbolStart = "42">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "fb2_0.FeedbackTableViewCell.init (fb2_0.FeedbackTableViewCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;fb2_0.FeedbackTableViewCell&gt;"
+                  symbolName = "fb2_0.FeedbackTableViewCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; fb2_0.FeedbackTableViewCell"
                   moduleName = "fb2.0"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
-                  timestampString = "480537882.339866"
+                  timestampString = "480821188.981222"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
                   endingLineNumber = "20"
-                  offsetFromSymbolStart = "148">
+                  offsetFromSymbolStart = "223">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fb2_0.FeedbackTableViewCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;fb2_0.FeedbackTableViewCell&gt;"
+                  moduleName = "fb2.0"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/calvinraveenthran/Documents/Programming/fb2.0/fb2.0/FeedbackTableViewCell.swift"
+                  timestampString = "480821188.981345"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "138">
                </Location>
             </Locations>
          </BreakpointContent>
