@@ -89,6 +89,7 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
                 desView.targetMenu = targetMenu
                 desView.delegate = tabBarController
                 desView.chef = self.menuItems[indexPath.row].owner
+                desView.menuLabel = self.menuItems[indexPath.row].name
             let desView2: FeedbackViewController = tabBarController.viewControllers?.last as! FeedbackViewController
                 desView2.targetMenu = targetMenu
         }
@@ -153,16 +154,13 @@ class MenuTableViewController:  UITableViewController, OrderItemTabBarController
                                     if error == nil{
                                         let foodItemImage = UIImage(data: imageData!)
                                         self.menuImages[foodItem.pffImage] = foodItemImage!
+                                            if self.menuImages.count == self.menuItems.count {
+                                                self.tableView.reloadData()
+                                            }
                                     }else {
                                         print("Error: \(error!) \(error!.userInfo)")
                                     }
                                 })
-                            
-                                NSOperationQueue.mainQueue().addOperationWithBlock() {
-                                    if self.menuImages.count == self.menuItems.count {
-                                        self.tableView.reloadData()
-                                    }
-                                }
                             }
                         }
                         // when done, update your UI and/or model on the main queue NON-IMAGE

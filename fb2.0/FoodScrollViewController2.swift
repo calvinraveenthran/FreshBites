@@ -25,8 +25,9 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
         @IBOutlet weak var commentsTextField: UITextField!
         @IBOutlet weak var scrollView: UIScrollView!
         @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var chefName: UILabel!
+        @IBOutlet weak var chefName: UILabel!
     
+        @IBOutlet weak var menuName: UILabel!
         var delegate : FoodScrollViewController2Delegate! = nil
     
     
@@ -40,7 +41,8 @@ class FoodScrollViewController2: UIViewController, UIScrollViewDelegate, UITextF
         //Variable of Controller Delegate (The Menu Item Selected in previous Table)
         var targetMenu: MenuItem!
         var chef: String!
-        var itemCount: Int = 0
+        var menuLabel: String!
+        var itemCount: Int = 1
     
     
     
@@ -99,7 +101,8 @@ override func viewDidLoad() {
         //self.itemDescriptionDescriptionTextView.text = targetMenu.menuItemDescription
     
         self.countLabel.text = "\(itemCount)"
-        self.chefName.text = "Chef: " + self.chef
+        self.chefName.text = "By " + self.chef
+        self.menuName.text = self.menuLabel
         self.commentsTextField.delegate = self;
     
     
@@ -266,6 +269,7 @@ extension FoodScrollViewController2: UITableViewDataSource {
         
         let dict = self.itemList[indexPath.row] as! [String:AnyObject]
         cell.textLabel?.text = (dict["itemName"] as! String) + "  " + "(" + "\(dict["servings"] as! Int)" + " servings)"
+        cell.textLabel?.font.fontWithSize(14)
         
         return cell
     }

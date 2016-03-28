@@ -17,6 +17,7 @@ class OrderHistoryTableViewCell:  UITableViewCell {
 @IBOutlet weak var purchaseDateLabel: UILabel!
 @IBOutlet weak var foodPriceLabel: UILabel!
 @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var foodStatusLabel: UILabel!
 
 
 

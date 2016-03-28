@@ -45,6 +45,14 @@ class OrderHistoryTableViewController:  UITableViewController {
         cell.foodNameLabel.text = item.name
         cell.foodPriceLabel.text = "$\(item.quantity*item.price)"
         cell.purchaseDateLabel.text = item.date
+        cell.purchaseDateLabel.textColor = UIColor.concreteColor()
+        if item.fulfilled == true {
+            cell.foodStatusLabel.text = "Fulfilled"
+            cell.foodStatusLabel.textColor = UIColor.greenSeaColor()
+        }else{
+            cell.foodStatusLabel.text = "Pending"
+            cell.foodStatusLabel.textColor = UIColor.sunflowerColor()
+        }
         
         cell.backgroundColor = UIColor.clearColor()
         return cell
@@ -77,13 +85,14 @@ class OrderHistoryTableViewController:  UITableViewController {
                         let foodName:String? = (orderProperty as PFObject)["foodName"] as? String
                         let foodPrice:Int? = (orderProperty as PFObject)["price"] as? Int
                         let foodQuantity:Int? = (orderProperty as PFObject)["quantity"] as? Int
+                        let foodFulfilled:Bool? = (orderProperty as PFObject)["fulfilled"] as? Bool
                         let dateUpdated = orderProperty.updatedAt! as NSDate
                         
                         
                         let dateFormatter = NSDateFormatter()
                         dateFormatter.dateFormat = "dd-MM-yyyy"
                         
-                        let loadedOrderItem = OrderHistory(name: foodName!, quantity: foodPrice!, price: foodQuantity! , date: dateFormatter.stringFromDate(dateUpdated))
+                        let loadedOrderItem = OrderHistory(name: foodName!, quantity: foodPrice!, price: foodQuantity! , date: dateFormatter.stringFromDate(dateUpdated), fulfilled: foodFulfilled!)
                         self.orderHistoryItems.append(loadedOrderItem)
                     }
                     

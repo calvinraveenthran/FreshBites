@@ -54,6 +54,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
                 orderSend["details"] = foodOrder.comments
                 orderSend["price"] = foodOrder.price.integerValue
                 orderSend["caterer"] = foodOrder.owner
+                orderSend["fulfilled"] = false
 
 
                 orderSend.saveInBackgroundWithBlock {
@@ -79,7 +80,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
                         
                                     let total = subtotal.decimalNumberByAdding(shipping).decimalNumberByAdding(tax)
                         
-                                    let payment = PayPalPayment(amount: total, currencyCode: "CAD", shortDescription: "Calvin R Test", intent: .Sale)
+                                    let payment = PayPalPayment(amount: total, currencyCode: "CAD", shortDescription: "FreshBites", intent: .Sale)
                         
                                     payment.items = Items
                                     payment.paymentDetails = paymentDetails
@@ -87,7 +88,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
                         
                                     UserSessionManager.userSharedManager.checkoutArray.removeAll()
                                     self.checkoutArray = UserSessionManager.userSharedManager.checkoutArray
-                                    self.priceLabel.text = "0"
+                                    self.priceLabel.text = "$0"
                                     self.checkoutTableView.reloadData()
                         
                                     if (payment.processable) {
@@ -192,7 +193,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
         for var i = 0; i < self.checkoutArray.count ; ++i {
             totalSum += self.checkoutArray[i].quantity*self.checkoutArray[i].price.integerValue
         }
-        self.priceLabel.text = "\(totalSum)"
+        self.priceLabel.text = "$\(totalSum)"
     }
 
 }

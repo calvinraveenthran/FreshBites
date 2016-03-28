@@ -67,13 +67,15 @@ class OrderHistory: NSObject{
     var quantity: Int!
     var price: Int!
     var date:String!
+    var fulfilled:Bool!
     
-    init(name: String, quantity: Int, price: Int , date: String) {
+    init(name: String, quantity: Int, price: Int , date: String, fulfilled: Bool) {
         
         self.name = name
         self.quantity = quantity
         self.price = price
         self.date = date
+        self.fulfilled = fulfilled
     }
 }
 
