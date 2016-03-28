@@ -42,9 +42,14 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
         let queue = NSOperationQueue()
         var Items : [PayPalItem] = []
 
+        let filteredArray = UserSessionManager.userSharedManager.checkoutArray.filter() {
+            return $0.quantity > 0
+        }
+        
+        
         
     queue.addOperationWithBlock() {
-            for foodOrder in UserSessionManager.userSharedManager.checkoutArray {
+            for foodOrder in filteredArray {
                 let orderSend = PFObject(className:"Orders")
             
                 orderSend["customer"] = PFUser.currentUser()?.username
@@ -69,7 +74,7 @@ class CheckoutViewController : UIViewController, CheckoutTableViewCellDelegate, 
                 
                             //4.    When Downloading is Finished (Join queue)
                             NSOperationQueue.mainQueue().addOperationWithBlock() {
-                                if Items.count == UserSessionManager.userSharedManager.checkoutArray.count{
+                                if Items.count == filteredArray.count{
                     
                                     let subtotal = PayPalItem.totalPriceForItems(Items)
                         

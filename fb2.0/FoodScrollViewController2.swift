@@ -269,7 +269,7 @@ extension FoodScrollViewController2: UITableViewDataSource {
         
         let dict = self.itemList[indexPath.row] as! [String:AnyObject]
         cell.textLabel?.text = (dict["itemName"] as! String) + "  " + "(" + "\(dict["servings"] as! Int)" + " servings)"
-        cell.textLabel?.font.fontWithSize(14)
+        cell.textLabel?.font = UIFont(name:"Avenir Next", size:14)
         
         return cell
     }
