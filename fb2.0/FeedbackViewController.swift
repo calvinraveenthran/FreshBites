@@ -117,7 +117,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate{
     @IBAction func sendFeedback(sender: AnyObject) {
         let newFeedback = Feedback()
         var reviewSend = PFObject(className:"Feedback")
-        
+        if !(nameField?.text?.isEmpty)! && !(feedbackField?.text?.isEmpty)!{
         if let name = nameField?.text {
             newFeedback.name = name
             reviewSend["name"] = name
@@ -154,6 +154,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate{
         feedbackField?.text = ""
         nameField?.resignFirstResponder()
         feedbackField?.resignFirstResponder()
+        }
         
     }
     
