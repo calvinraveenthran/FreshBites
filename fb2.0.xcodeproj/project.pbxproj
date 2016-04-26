@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F1FF1701C78273200BB4D91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FF16F1C78273200BB4D91 /* ProfileViewController.swift */; };
-		0F2B30301CA8E021008D54A7 /* crease_horizontal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B302F1CA8E021008D54A7 /* crease_horizontal.gif */; };
-		0F2B30321CA8E57D008D54A7 /* 1459156014_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B30311CA8E57D008D54A7 /* 1459156014_plus.png */; };
-		0F2B30341CA8E5C8008D54A7 /* 1459156107_basics-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B30331CA8E5C8008D54A7 /* 1459156107_basics-16.png */; };
 		0F2F23D51C8EB2E3003146C8 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2F23CD1C8EB2E3003146C8 /* libPayPalMobile.a */; };
 		0F58759D1C31DADF0028F294 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F58759C1C31DADF0028F294 /* CoreData.framework */; };
 		0F59770F1C76A7F60026F5E5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59770E1C76A7F60026F5E5 /* MessageViewController.swift */; };
@@ -93,6 +90,7 @@
 		0F67D48D1C531DAE008C2427 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F67D48C1C531DAE008C2427 /* info.png */; };
 		0F67D48F1C532B84008C2427 /* OrderItemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67D48E1C532B84008C2427 /* OrderItemTabBarController.swift */; };
 		0F67F5C21C389A1100026142 /* FoodScrollViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67F5C11C389A1100026142 /* FoodScrollViewController2.swift */; };
+		0F72677F1CD000FC00618474 /* crease_horizontal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F72677E1CD000FC00618474 /* crease_horizontal.gif */; };
 		0F765DA51C54975500C4D2BF /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F765DA41C54975500C4D2BF /* CheckoutTableViewCell.swift */; };
 		0F7DA4351BFB04B70065845C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DA4341BFB04B70065845C /* libz.tbd */; };
 		0F7DA4371BFB04C30065845C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DA4361BFB04C30065845C /* libsqlite3.tbd */; };
@@ -167,9 +165,6 @@
 
 /* Begin PBXFileReference section */
 		0F1FF16F1C78273200BB4D91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0F2B302F1CA8E021008D54A7 /* crease_horizontal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = crease_horizontal.gif; path = ../../../../../Downloads/crease_horizontal.gif; sourceTree = "<group>"; };
-		0F2B30311CA8E57D008D54A7 /* 1459156014_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1459156014_plus.png; path = ../../../../../Downloads/1459156014_plus.png; sourceTree = "<group>"; };
-		0F2B30331CA8E5C8008D54A7 /* 1459156107_basics-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1459156107_basics-16.png"; path = "../../../../../Downloads/1459156107_basics-16.png"; sourceTree = "<group>"; };
 		0F2F23CD1C8EB2E3003146C8 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
 		0F2F23CE1C8EB2E3003146C8 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
 		0F2F23CF1C8EB2E3003146C8 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
@@ -260,6 +255,7 @@
 		0F67D48C1C531DAE008C2427 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		0F67D48E1C532B84008C2427 /* OrderItemTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItemTabBarController.swift; sourceTree = "<group>"; };
 		0F67F5C11C389A1100026142 /* FoodScrollViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodScrollViewController2.swift; sourceTree = "<group>"; };
+		0F72677E1CD000FC00618474 /* crease_horizontal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = crease_horizontal.gif; sourceTree = "<group>"; };
 		0F765DA41C54975500C4D2BF /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
 		0F7DA4341BFB04B70065845C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0F7DA4361BFB04C30065845C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -427,9 +423,7 @@
 		0F5C292F1C30DD93005F8CD5 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				0F2B30311CA8E57D008D54A7 /* 1459156014_plus.png */,
-				0F2B30331CA8E5C8008D54A7 /* 1459156107_basics-16.png */,
-				0F2B302F1CA8E021008D54A7 /* crease_horizontal.gif */,
+				0F72677E1CD000FC00618474 /* crease_horizontal.gif */,
 				0FA6F9871C72FB0D0042FB6F /* unnamed.png */,
 				0F67D4881C531D63008C2427 /* fork-knife.png */,
 				0F67D48A1C531D72008C2427 /* photos-simple-7.png */,
@@ -833,7 +827,6 @@
 				0F5C29891C30DD93005F8CD5 /* fork@3x.png in Resources */,
 				0F5C29A11C30DD93005F8CD5 /* photo_item2@3x.png in Resources */,
 				0F5C29821C30DD93005F8CD5 /* feedback@2x.png in Resources */,
-				0F2B30321CA8E57D008D54A7 /* 1459156014_plus.png in Resources */,
 				0F5C29831C30DD93005F8CD5 /* feedback@3x.png in Resources */,
 				0F5C29951C30DD93005F8CD5 /* logo_splash@3x.png in Resources */,
 				0F5C29A41C30DD93005F8CD5 /* photo_item3@3x.png in Resources */,
@@ -846,7 +839,6 @@
 				0F5C29981C30DD93005F8CD5 /* menu_button@3x.png in Resources */,
 				0F5C29791C30DD93005F8CD5 /* arrow_right@2x.png in Resources */,
 				0F88E57C1C76AB4B00848D69 /* Main.storyboard in Resources */,
-				0F2B30341CA8E5C8008D54A7 /* 1459156107_basics-16.png in Resources */,
 				0F5C299A1C30DD93005F8CD5 /* our_menu@2x.png in Resources */,
 				0F5C297D1C30DD93005F8CD5 /* background@3x.png in Resources */,
 				0F5C29971C30DD93005F8CD5 /* menu_button@2x.png in Resources */,
@@ -857,7 +849,7 @@
 				0F5C298C1C30DD93005F8CD5 /* location@3x.png in Resources */,
 				0F5C29A81C30DD93005F8CD5 /* reservation.png in Resources */,
 				0F5C29991C30DD93005F8CD5 /* our_menu.png in Resources */,
-				0F2B30301CA8E021008D54A7 /* crease_horizontal.gif in Resources */,
+				0F72677F1CD000FC00618474 /* crease_horizontal.gif in Resources */,
 				0F5C29781C30DD93005F8CD5 /* arrow_right.png in Resources */,
 				0F5C29B01C30DD93005F8CD5 /* splash_screen_logo@3x.png in Resources */,
 				0F5C298A1C30DD93005F8CD5 /* location.png in Resources */,
