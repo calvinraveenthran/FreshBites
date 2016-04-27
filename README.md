@@ -57,4 +57,3 @@ An application for students to order home cooked meals from chefs around town. I
 
 
 
-![Screenshot](/FreshBitesScreenShots/15.jpg)
