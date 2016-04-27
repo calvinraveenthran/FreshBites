@@ -1,5 +1,9 @@
 # FreshBites
-An application for students to order home cooked meals from chefs around town. I used mainly 3 third party extensions which are Parse, PayPal and SWRevealViewController
+An application for students to order home cooked meals from chefs around town. I used mainly 3 third party extensions which are Parse, PayPal and SWRevealViewController. I want to thank Nayeem Zen (github nayeemzen) & Rajaie Alkorani (github rajaie) for working with me throughout this application. It still needs a few fixes. I am hoping to 
+
+1) Migrate from parse to my own backend server
+2) Introduce push notifications 
+3) update UI for text insertions
 
 ![Screenshot](/FreshBitesScreenShots/1.jpg)
 
